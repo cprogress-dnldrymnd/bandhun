@@ -255,7 +255,8 @@ body.logged-in header .navbar-nav {
       margin-top: 0 !important;
       display: block !important;
       height: auto; }
-  #sidebar-filter .col-head {
+  #sidebar-filter .offcanvas-title {
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 22px;
     padding: 30px 1rem; }
