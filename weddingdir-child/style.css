@@ -370,4 +370,9 @@ body.body-show-map .close-map {
   display: none;
   cursor: pointer; }
 
+.page-template-search-listing.user-is-not-logged-in header .button-box {
+  display: none !important; }
+.page-template-search-listing.user-is-not-logged-in header .order-lg-last {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */

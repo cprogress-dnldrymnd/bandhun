@@ -631,3 +631,16 @@ body {
   display: none;
   cursor: pointer;
 }
+
+.page-template-search-listing {
+  &.user-is-not-logged-in {
+    header {
+      .button-box {
+        display: none !important;
+      }
+      .order-lg-last {
+        display: none !important;
+      }
+    }
+  }
+}

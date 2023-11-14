@@ -762,3 +762,15 @@ function create_new_listing_post($meta_input)
         return wp_insert_post($wordpress_post);
     }
 }
+
+//check if user is logged in
+add_filter('body_class', 'custom_class');
+function custom_class($classes)
+{
+    if (is_user_logged_in()) {
+        $classes[] = 'user-is-logged-in';
+    } else {
+        $classes[] = 'user-is-not-logged-in';
+    }
+    return $classes;
+}
