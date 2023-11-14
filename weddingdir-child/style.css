@@ -409,4 +409,7 @@ body.user-is-logged-in .not-logged-in-only {
     height: 100%;
     object-fit: cover; }
 
+.avatar-wrap {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
