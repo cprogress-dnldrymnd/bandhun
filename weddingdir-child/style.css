@@ -406,6 +406,7 @@ body.user-is-logged-in .not-logged-in-only {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
