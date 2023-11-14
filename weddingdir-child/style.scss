@@ -393,8 +393,11 @@ body {
 
 .dashboard-body {
   .col-xl-8 {
-    display: flex;
-    flex-direction: column-reverse;
+    .card-shadow {
+      :nth-child(2) {
+        display: none;
+      }
+    }
   }
 }
 
