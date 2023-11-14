@@ -128,22 +128,7 @@
     }
   }
 }
-@mixin container-size {
-  .container,
-  .container-fluid {
-    @media (min-width: 1500px) {
-      max-width: 1420px;
-    }
 
-    @media (min-width: 1600px) {
-      max-width: 1520px;
-    }
-
-    @media (min-width: 1700px) {
-      max-width: 1620px;
-    }
-  }
-}
 header {
   .order-lg-last {
     a[data-bs-target="#weddingdir_couple_registration_model_popup"] {
@@ -171,12 +156,38 @@ header {
       }
     }
   }
-  @include container-size();
-}
 
+  .container,
+  .container-fluid {
+    @media (min-width: 1500px) {
+      max-width: 1420px;
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1520px;
+    }
+
+    @media (min-width: 1700px) {
+      max-width: 1620px;
+    }
+  }
+}
 .page-template-search-listing {
-  @include container-size();
-  
+  .listing-content {
+    > div {
+      @media (min-width: 1500px) {
+        max-width: 1420px;
+      }
+
+      @media (min-width: 1600px) {
+        max-width: 1520px;
+      }
+
+      @media (min-width: 1700px) {
+        max-width: 1620px;
+      }
+    }
+  }
 }
 .btn-primary {
   border: none !important;
