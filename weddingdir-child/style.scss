@@ -18,7 +18,7 @@
  *   -------------------------------
  */
 :root {
-  --gold-color: #D7B740;
+  --gold-color: #d7b740;
   --white-color: #fff;
   --pink-color: #e31f71;
 }
@@ -103,7 +103,6 @@
   }
 }
 
-
 .btn-secondary {
   background-color: var(--gold-color);
   border-color: var(--gold-color);
@@ -140,12 +139,10 @@ header {
   .navbar-nav {
     margin-left: 2rem !important;
     margin-right: 2rem;
-
-
   }
 
   .navbar-collapse {
-    justify-content: space-between
+    justify-content: space-between;
   }
 
   .button-box {
@@ -188,14 +185,12 @@ header {
 body {
   &.logged-in {
     header {
-
       .navbar-nav {
         margin-left: auto !important;
       }
     }
   }
 }
-
 
 #weddingdir_vendor_login_model_popup,
 #weddingdir_couple_login_model_popup {
@@ -208,8 +203,6 @@ body {
       max-width: 1140px;
     }
   }
-
-
 }
 
 .owl-carousel.owl-carousel {
@@ -232,7 +225,7 @@ body {
     display: none !important;
   }
 
-  .row>[class*='col-'] {
+  .row > [class*="col-"] {
     width: 100%;
   }
 
@@ -241,7 +234,7 @@ body {
   }
 
   .col-lg-3 {
-    display: none
+    display: none;
   }
 }
 
@@ -268,7 +261,6 @@ body {
 
     &::before {
       content: none;
-
     }
   }
 }
@@ -296,7 +288,8 @@ body {
 }
 
 .review-option {
-  .count {}
+  .count {
+  }
 
   .icon {
     i.fa-dollar {
@@ -313,7 +306,6 @@ body {
     }
   }
 }
-
 
 .date-choose-collapse {
   .btn-link-primary {
@@ -335,11 +327,11 @@ body {
   .slider-form {
     background-color: transparent !important;
 
-    >.row {
+    > .row {
       flex-wrap: nowrap;
       --bs-gutter-x: 10px !important;
 
-      >div {
+      > div {
         border: none !important;
 
         @media (min-width: 768px) {
@@ -393,7 +385,7 @@ body {
 }
 
 .dash-categories.dash-categories {
-  background-color: #FFE8F2;
+  background-color: #ffe8f2;
 
   .head {
     i {
@@ -404,7 +396,7 @@ body {
 
 .wedding-detail-wrap .wedding-details-items .edit .edit-click,
 .wedding-detail-wrap .wedding-details-items .btn {
-  background-color: #FFE8F1 !important;
+  background-color: #ffe8f1 !important;
 
   i {
     color: var(--pink-color);
@@ -418,7 +410,7 @@ body {
 .couple-info.couple-info {
   padding-left: 50px;
 
-  .row-cols-md-2>* {
+  .row-cols-md-2 > * {
     .couple-status-item .counter {
       color: #000;
       font-weight: 400;
@@ -429,7 +421,7 @@ body {
       font-weight: 400;
     }
 
-    @media(min-width: 1200px) {
+    @media (min-width: 1200px) {
       width: 33.3333333%;
     }
   }
@@ -452,7 +444,6 @@ body {
 
   .col-12 {
     border-bottom: 1px solid #e5e5e5;
-
 
     .row-cols-xl-4 {
       .col {
@@ -546,7 +537,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
@@ -568,7 +559,7 @@ body {
   #listing-layout-one {
     .row {
       .col {
-        @media(min-width: 992px) {
+        @media (min-width: 992px) {
           width: 33.33333333%;
         }
       }
@@ -591,7 +582,6 @@ body {
 
   &.show-map {
     transform: translateX(0);
-
   }
 }
 
@@ -613,12 +603,30 @@ body {
 
 #listing-layout-one-tab {
   &:after {
-    content: 'Gallery';
+    content: "Gallery";
   }
 }
 
 #listing-layout-two-tab {
   &:after {
-    content: 'List';
+    content: "List";
   }
+}
+body {
+  &.body-show-map {
+    .close-map {
+      display: inline-block;
+    }
+  }
+}
+.close-map {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999999;
+  left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: none;
 }

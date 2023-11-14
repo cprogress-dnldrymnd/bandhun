@@ -18,7 +18,7 @@
  *   -------------------------------
  */
 :root {
-  --gold-color: #D7B740;
+  --gold-color: #d7b740;
   --white-color: #fff;
   --pink-color: #e31f71; }
 
@@ -119,7 +119,7 @@ body.logged-in header .navbar-nav {
   padding-bottom: 10px; }
   .top-bar-stripe i {
     display: none !important; }
-  .top-bar-stripe .row > [class*='col-'] {
+  .top-bar-stripe .row > [class*="col-"] {
     width: 100%; }
   .top-bar-stripe p {
     margin-bottom: 0; }
@@ -205,13 +205,13 @@ body.logged-in header .navbar-nav {
   display: none; }
 
 .dash-categories.dash-categories {
-  background-color: #FFE8F2; }
+  background-color: #ffe8f2; }
   .dash-categories.dash-categories .head i {
     color: var(--pink-color); }
 
 .wedding-detail-wrap .wedding-details-items .edit .edit-click,
 .wedding-detail-wrap .wedding-details-items .btn {
-  background-color: #FFE8F1 !important; }
+  background-color: #ffe8f1 !important; }
   .wedding-detail-wrap .wedding-details-items .edit .edit-click i,
   .wedding-detail-wrap .wedding-details-items .btn i {
     color: var(--pink-color); }
@@ -350,9 +350,23 @@ body.logged-in header .navbar-nav {
     margin-right: 10px; }
 
 #listing-layout-one-tab:after {
-  content: 'Gallery'; }
+  content: "Gallery"; }
 
 #listing-layout-two-tab:after {
-  content: 'List'; }
+  content: "List"; }
+
+body.body-show-map .close-map {
+  display: inline-block; }
+
+.close-map {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999999;
+  left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
