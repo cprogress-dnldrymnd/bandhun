@@ -157,7 +157,7 @@ header {
     }
   }
 
-  .container {
+  .container, .container-fluid {
     @media (min-width: 1500px) {
       max-width: 1420px;
     }

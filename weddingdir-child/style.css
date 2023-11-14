@@ -83,13 +83,13 @@ header .button-box a {
   header .button-box a:not(:last-child) {
     margin-right: 1.25rem; }
 @media (min-width: 1500px) {
-  header .container {
+  header .container, header .container-fluid {
     max-width: 1420px; } }
 @media (min-width: 1600px) {
-  header .container {
+  header .container, header .container-fluid {
     max-width: 1520px; } }
 @media (min-width: 1700px) {
-  header .container {
+  header .container, header .container-fluid {
     max-width: 1620px; } }
 
 .btn-primary {
