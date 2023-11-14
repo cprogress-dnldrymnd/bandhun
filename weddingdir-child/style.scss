@@ -448,9 +448,9 @@ body {
 }
 
 #sidebar-filter {
+  z-index: 999999;
   .col-12 {
     border-bottom: 1px solid #e5e5e5;
-
 
     .filter-widget-layout-two {
       margin-top: 0 !important;
