@@ -631,7 +631,13 @@ body {
   display: none;
   cursor: pointer;
 }
-
+body {
+  &.user-is-not-logged-in {
+    .logged-in-only {
+      display: none;
+    }
+  }
+}
 .page-template-search-listing {
   &.user-is-not-logged-in {
     header {
