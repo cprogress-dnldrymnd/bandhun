@@ -398,4 +398,14 @@ body.user-is-logged-in .not-logged-in-only {
 .page-template-search-listing.user-is-not-logged-in header .order-lg-last {
   display: none !important; }
 
+.wedding-listing .img .img-content a {
+  padding: 35%;
+  position: relative; }
+  .wedding-listing .img .img-content a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
 /*# sourceMappingURL=style.css.map */
