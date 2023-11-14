@@ -191,12 +191,6 @@ header {
     }
   }
 }
-@media (min-width: 1400px) {
-  .row-cols-xxl-3 > * {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-}
 
 .btn-primary {
   border: none !important;
@@ -665,6 +659,12 @@ body {
   }
 }
 .page-template-search-listing {
+  @media (min-width: 1400px) {
+    .row-cols-xxl-3 > * {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  }
   &.user-is-not-logged-in {
     header {
       .button-box {
