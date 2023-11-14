@@ -113,7 +113,7 @@ function action_header_right_side()
     if (!is_user_logged_in()) {
 ?>
         <div class="button-box">
-            <a class="btn btn-secondary" href="javascript:" role="button" data-bs-toggle="modal" data-bs-target="#weddingdir_couple_registration_model_popup"><i class="fa fa-user-o d-xs-block d-lg-none d-xl-none d-sm-none"></i>
+            <a class="btn btn-secondary" href="javascript:" role="button" data-bs-toggle="modal" data-bs-target="#weddingdir_couple_login_model_popup"><i class="fa fa-user-o d-xs-block d-lg-none d-xl-none d-sm-none"></i>
                 <span class="d-none d-sm-block">
                     <strong>User login</strong>
                 </span>
