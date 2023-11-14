@@ -632,7 +632,7 @@ body {
   cursor: pointer;
 }
 body {
-  &.user-is-not-logged-in {
+  &.user-is-logged-in {
     .not-logged-in-only {
       display: none;
     }

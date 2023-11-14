@@ -370,7 +370,7 @@ body.body-show-map .close-map {
   display: none;
   cursor: pointer; }
 
-body.user-is-not-logged-in .not-logged-in-only {
+body.user-is-logged-in .not-logged-in-only {
   display: none; }
 
 .page-template-search-listing.user-is-not-logged-in header .button-box {
