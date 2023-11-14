@@ -396,6 +396,9 @@ body.user-is-logged-in .not-logged-in-only {
 .avatar-wrap img {
   display: none; }
 
+.profile-avatar {
+  display: none !important; }
+
 #weddingdir_find_listing_section .col-xxl-7 {
   width: 100%; }
 
