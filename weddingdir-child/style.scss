@@ -633,7 +633,7 @@ body {
 }
 body {
   &.user-is-not-logged-in {
-    .logged-in-only {
+    .not-logged-in-only {
       display: none;
     }
   }
