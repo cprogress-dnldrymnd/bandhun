@@ -175,6 +175,8 @@ header {
 .page-template-search-listing {
   .listing-content {
     > div {
+      margin-left: auto;
+      margin-right: auto;
       @media (min-width: 1500px) {
         max-width: 1420px;
       }
@@ -189,6 +191,13 @@ header {
     }
   }
 }
+@media (min-width: 1400px) {
+  .row-cols-xxl-3 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
 .btn-primary {
   border: none !important;
 
