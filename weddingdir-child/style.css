@@ -322,8 +322,7 @@ body.logged-in header .navbar-nav {
   .tax-listing-category #listing-layout-one .row .col {
     width: 33.33333333%; } }
 
-#weddingdir_show_listing_on_map,
-#weddingdir_listing_tax_map {
+#map_handler {
   position: fixed;
   top: 0;
   right: 0;
@@ -334,8 +333,7 @@ body.logged-in header .navbar-nav {
   width: 100%;
   transform: translateX(100%);
   transition: 500ms; }
-  #weddingdir_show_listing_on_map.show-map,
-  #weddingdir_listing_tax_map.show-map {
+  #map_handler.show-map {
     transform: translateX(0); }
 
 .map-tabbing.theme-tabbing.nav-pills .nav-link {
