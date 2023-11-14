@@ -399,4 +399,12 @@ body.user-is-logged-in .not-logged-in-only {
 #weddingdir_find_listing_section .col-xxl-7 {
   width: 100%; }
 
+.password-eye {
+  position: relative; }
+  .password-eye .fa {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); }
+
 /*# sourceMappingURL=style.css.map */
