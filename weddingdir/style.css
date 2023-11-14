@@ -1,0 +1,1236 @@
+/**
+ *   Theme Name:    WeddingDir
+ *   Theme URI:     https://weddingdir.net/
+ *   Author:        wp-organic
+ *   Author URI:    https://wporganic.com/
+ *   Description:   WeddingDir is wedding directory listing WordPress theme. Specially designed and developed for wedding vendors and couples. Vendor can create business listing. Couple Wedding planner, Wedding Management, Organizer & Planners.
+ *   Version:       1.1.7
+ *   License:       GNU General Public License v2 or later
+ *   License URI:   https://www.gnu.org/licenses/gpl-2.0.html
+ *   Tested up to:  5.6
+ *   Requires PHP:  7.4
+ *   Text Domain:   weddingdir
+ *   Tags:          two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+ */
+
+/** Map Height **/
+
+.top_listing{
+    height: 360px;
+    min-height: 450px;
+}
+.left_listing,
+.right_listing{
+    height: 100%;
+    min-height: 800px;
+}
+#map_canvas{
+    height: 350px !important;
+}
+#singlelistmap{
+    height: 400px;
+}
+
+
+/** Pagination jQuery **/
+.vendor-section,
+.listing-section {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+
+.rating-star{
+/*     margin: 4px auto 0px auto; */
+}
+.given-review{
+    display: inline-block;
+}
+
+.header{
+    z-index: 99;
+}
+.user-img img{width: 60px;}
+
+
+/** Gallery Post height **/
+.single-blog-post-slider,
+.single-post-featured-image .single-bg{
+    position: relative;
+}
+.single-blog-post-slider .paralax-bg,
+.single-post-featured-image .single-bg{
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+p.link_pagination {
+    margin-top: 20px;
+    clear: both;
+}
+
+/** Video Responsive **/
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/**   WordPress Core - Sidenav **/
+
+ul.children, ul.sub-menu {
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+p.wp_page_link {
+    margin-top: 20px;clear: both;
+}
+
+/** Pingback */
+ol.comments{
+    list-style: none;
+    padding-left: 0px;
+}
+a.comment-edit-link {
+    float: right;
+}
+.bypostauthor {
+    display: block;
+}
+
+select{
+    width: 100%;
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+    display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+
+/*-------------- align ------------*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
+.alignright { float: right; margin: 0px 0 20px 30px; }
+.alignleft { float: left; margin: 0px 20px 20px 0; }
+a img.alignright { float: right; margin: 0px 0 30px 30px; }
+a img.alignnone { margin: 5px 20px 20px 0; }
+a img.alignleft { float: left; margin: 5px 20px 20px 0; }
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.wp-caption { background: #fff; border: 1px solid #f0f0f0; text-align: center; }
+.wp-caption img { border: 0 none; height: auto; margin: 0; max-width: 100%; padding: 0; width: auto; }
+.wp-caption p.wp-caption-text {     
+    line-height: 17px;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+figure, .wp-caption, .wp-caption-overlay .wp-caption {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    clear: both;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    padding: 10px;
+    background: #f8f8f9;
+    color: #27304b;
+
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+.aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+    -ms-word-wrap: break-word; 
+    word-wrap: break-word;
+}
+
+.footer{
+    clear: both;
+}
+.footer table th{
+    color: #fff;
+}
+
+/**  submit / reset / forgot / button  */
+.post-password-form input[type=submit], 
+.post-password-form input[type=button], 
+.post-password-form input[type=reset]{
+    background: var( --weddingdir-color-cyan, #00aeaf );
+    padding: 0px 15px;
+    border: none;
+    color: #ffffff;
+}
+.post-password-form input{
+}
+
+.calendar_wrap table,
+.wp-calendar-table table{
+    margin-bottom: 0px;
+}
+
+footer .rsswidget,
+footer .calendar_wrap a,
+footer .wp-calendar-table a{
+    color: var( --weddingdir-color-cyan, #00aeaf );
+}
+footer .wp-calendar-table a:hover,
+footer .calendar_wrap a:hover,
+footer .rsswidget:hover{
+    color: var( --weddingdir-color-orange, #f48f00 );
+}
+footer #wp-calendar caption{color: #b5afae !important;}
+footer .footer-widget ul li{
+    /*margin-top: 5px;*/
+}
+
+footer strong{
+    color: #b5afae;
+}
+
+
+/**
+ *  Dashboard Header
+ */
+div.nsl-container-block .nsl-container-buttons a{
+    max-width: 100% !important;
+}
+
+a.post-page-numbers,
+span.post-page-numbers {
+    color: #302d34;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #f6f6f7;
+    border-color: #efefef;
+    box-shadow: none;
+    outline: none;
+    float: left;
+    margin-right: 5px;
+}
+a.post-page-numbers.current,
+span.post-page-numbers.current{
+    background: var( --weddingdir-color-cyan, #00aeaf );
+    color: #fff;
+    border-color: var( --weddingdir-color-cyan, #00aeaf );    
+}
+
+
+a.post-page-numbers:hover{
+    color: #FFF;
+    border-color: var( --weddingdir-color-orange, #f48f00 );
+    border: 1px solid var( --weddingdir-color-orange, #f48f00 );
+    background: var( --weddingdir-color-orange, #f48f00 );
+}
+.comments-area blockquote, .comments-area .blockquote{
+  box-shadow: none;
+  background: #f8f8f9;
+}
+
+#cancel-comment-reply-link{
+    margin-left: 5px;
+    color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.weddingdir-page-content,
+.weddingdir-singular-page .post-content {
+    margin-bottom: 2rem;
+}
+
+.weddingdir-page-content .pagination,
+.weddingdir-blog-comment,
+.weddingdir-page-comment{
+    clear: both;
+}
+
+figure img{
+    height: auto;
+}
+
+.wp-block-button {
+    margin-bottom: 10px;
+}
+
+/**
+ *  If is Guternber Style
+ *  ---------------------
+ */
+div[class*="wp-block-"] {
+    margin-bottom: 20px;
+}
+div[class*="wp-block-"]:last-child {
+    margin-bottom: 0px;
+}
+ol.wp-block-latest-comments {
+    padding-left: 0px;
+}
+
+/**
+ *  Sticky Post
+ *  -----------
+ */
+article.sticky .post-content{
+    margin-bottom: 60px;
+    padding: 3em;
+    border: 2px solid #ddd;
+}
+.sticky .sticky-icon{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -12px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: #ddd;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    border-top-color: var( --weddingdir-color-orange, #f48f00 );
+}
+.weddingdir-singular-page code{
+    overflow: auto;
+    max-width: 100%;
+    padding: 0 1em;
+    background-color: #f7f7f7;
+    display: inline-block;
+    vertical-align: middle;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f7f8fa;
+    border-color: #ededed;
+}
+
+iframe, video, embed {
+    max-width: 100%;
+    /*min-height: 100px;*/
+    vertical-align: top;
+}
+
+figure figcaption, 
+.wp-caption .wp-caption-text{
+    color: #ffffff;
+    background-color: var( --weddingdir-color-rgba-orange, rgba(244, 143, 1, 0.8) );
+    position: absolute;
+    opacity: 1;
+    transition: all 0.3s ease;
+    bottom: 0px;
+    width: 100%;
+}
+
+figure:hover > figcaption,
+.wp-caption:hover .wp-caption-text,
+.wp-caption:hover .wp-caption-dd,
+.wp-caption-overlay .wp-caption:hover .wp-caption-text,
+.wp-caption-overlay .wp-caption:hover .wp-caption-dd {
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+figure:hover figcaption.blocks-gallery-caption {
+  opacity: 1;
+}
+
+figure figcaption:hover,
+.wp-caption .wp-caption-text:hover,
+.wp-caption .wp-caption-dd:hover,
+.wp-caption-overlay .wp-caption .wp-caption-text:hover,
+.wp-caption-overlay .wp-caption .wp-caption-dd:hover {
+  opacity: 1;
+}
+
+.gallery-item .gallery-caption {
+    max-height: 60%;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    overflow-y: auto;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.gallery-item a img {
+    border: none !important;
+    display: block;
+    width: 100%;
+}
+.gallery-item .gallery-icon {
+    margin: 5px;
+    width: 100%;
+}
+
+/**
+ *  Pingback and Trackback Comment
+ *  ------------------------------
+ */
+.comments > li.pingback, 
+.comments > li.trackback {
+    border: 1px solid #f0f0f0;
+    line-height: 24px;
+    list-style: none;
+    position: relative;
+    padding: 1em 4em 1em 1em;
+}
+
+.comments > li.pingback .edit-link, 
+.comments > li.trackback .edit-link {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.comments_list_wrap .media-body h1,
+.comments_list_wrap .media-body h2,
+.comments_list_wrap .media-body h3,
+.comments_list_wrap .media-body h4,
+.comments_list_wrap .media-body h5,
+.comments_list_wrap .media-body h6{
+    margin: 0.88em 0px;
+}
+
+.comments_list_wrap blockquote, 
+.comments_list_wrap blockquote {
+    margin: 1.5em 0;
+}
+
+
+.comments_list_wrap p + p {
+    margin-top: 0.6em;
+}
+
+.content-area code,
+.comments_list_wrap code{
+    overflow: auto;
+    max-width: 100%;
+    padding: 0 1em;
+    border: 1px solid #888;
+    display: inline-block;
+    vertical-align: middle;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f7f8fa;
+    border-color: #ededed;
+}
+
+.comments_list_wrap ol.children{
+    list-style: none;
+}
+.post-password-form input[type="password"] {
+    height: 40px;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.post-password-form input[type="submit"] {
+    display: inline-block;
+    margin-left: 0.2em;
+    height: 40px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    /* font-size: 18px; */
+    line-height: initial;
+}
+.post-password-form input[type="submit"]:hover{
+    color: #fff;
+    background-color: var( --weddingdir-color-dark-cyan, #009091 );
+    border-color: var( --weddingdir-color-dark-cyan, #009091 );
+    -webkit-box-shadow: 0px 20px 18px -22px rgb(255 255 255 / 0%) !important;
+    -ms-box-shadow: 0px 20px 18px -22px rgba(255, 255, 255, 0) !important;
+    box-shadow: 0px 20px 18px -22px rgb(255 255 255 / 0%) !important;
+}
+
+.weddingdir-singular-page table>tbody>tr>td{
+    text-align: center;
+}
+.weddingdir-singular-page table td, 
+.weddingdir-singular-page table th + td, 
+.weddingdir-singular-page table td + td {
+    color: #596172;
+    border-color: #ededed;
+}
+
+.wp-block-code{
+    color: #333333;
+    background-color: #f7f8fa;
+    border-color: #ededed;
+}
+
+.weddingdir-singular-page > .wp-block-pullquote{
+    padding:  0px;
+    border:  0px;
+}
+
+.wp-block-button .wp-block-button__link{
+    display: inline-block;
+    padding: 0.7rem 1.3rem 0.7rem;
+    font-size: 1rem;
+    outline: none;
+    align-items: center;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    text-transform: capitalize;
+    line-height: 21px;
+    color: #fff;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    border-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+.wp-block-button .wp-block-button__link:hover{
+    color: #fff;
+    background-color: var( --weddingdir-color-dark-cyan, #009091 );
+    border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+.weddingdir-singular-page .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-text-color):not(.has-background){
+    color: #fff;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    border-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.weddingdir-singular-page .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-text-color):hover, .scheme_default .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover{
+    color: #fff;
+    background-color: var( --weddingdir-color-dark-cyan, #009091 );
+    border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+.weddingdir-singular-page hr {
+    border-color: #ededed;
+}
+.wp-block-separator {
+    max-width: 5em;
+    margin: 3em 0;
+}
+.wp-block-separator {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.wp-block-separator.is-style-wide {
+    max-width: 100%;
+}
+.wp-block-separator.is-style-wide {
+    border-bottom-width: 1px;
+}
+.wp-block-separator.is-style-dots {
+    text-align: left;
+    max-width: 50%;
+    height: 14px;
+    line-height: 10px;
+    overflow: hidden;
+}
+.wp-block-separator.is-style-dots:before {
+    content: '.....................................';
+    color: #928a97;
+    letter-spacing: 7.35px;
+    padding-left: 2px;
+    font-weight: 300;
+}
+
+.weddingdir-singular-page .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):not(.has-text-color){
+    color: var( --weddingdir-color-cyan, #00aeaf );
+    background-color: transparent;
+    border-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+.weddingdir-singular-page .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):not(.has-text-color):hover{
+    color: var( --weddingdir-color-dark-cyan, #009091 );
+    background-color: transparent;
+    border-color: var( --weddingdir-color-dark-cyan, #009091 );   
+}
+.wp-calendar-nav .wp-calendar-nav-prev a, 
+.widget_calendar td#prev a {
+    text-decoration: none;
+}
+.wp-block-calendar .wp-calendar-nav{
+    text-align: left;
+}
+.weddingdir-singular-page input[type="search"]{
+    color: #596172;
+    border-color: #ebebeb;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0px;
+    outline: 0;
+}
+figure.wp-block-video figcaption,
+figure figcaption.blocks-gallery-caption,
+figure.wp-block-embed figcaption {
+    position: static;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    margin: 0;
+}
+figure.wp-block-video figcaption,
+figure figcaption.blocks-gallery-caption,
+figure.wp-block-embed figcaption {
+    opacity: 1 !important;
+    color: #ffffff;
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
+.has-large-font-size{
+    line-height: 1.5em;
+}
+
+.has-text-align-right {
+    text-align: right;
+}
+.has-small-font-size{
+    line-height: 1.2em;    
+}
+
+.has-medium-font-size {
+    line-height: 1.6em;
+    font-size: 1.5em
+}
+.has-text-align-center {
+    text-align: center;
+}
+
+p[style*="font-size:"]{
+    line-height: 1.2em;
+}
+
+blockquote.wp-block-quote:not(.is-style-large) {
+    margin: 1.1em 0 1.1em 0;
+    padding: 1.4em 0 1.5em 1.75em;
+    border-left: 6px solid var( --weddingdir-color-orange, #f48f00 );
+    background: transparent !important;
+}
+
+.weddingdir-singular-page blockquote.wp-block-quote:not(.is-style-large) {
+    color: #152035;
+    background-color: #ffffff;
+    border: none;
+    border-left: 6px solid var( --weddingdir-color-orange, #f48f00 );
+    padding: 20px;
+}
+
+blockquote.wp-block-quote:not(.is-style-large)::before,
+.weddingdir-singular-page blockquote.wp-block-quote:not(.is-style-large)::before {
+    display: none;
+}
+
+.wp-block-quote p,
+.wp-block-pullquote p,
+.wp-block-quote.is-style-large p{
+    margin-bottom: 1rem;
+}
+.wp-block-quote.is-style-large, 
+.blog_mode_post blockquote{
+    background: #fff;
+    border: none;
+    position: relative;
+    font-size: 1.25rem;
+    padding: 2rem 2rem 2rem 5rem;
+    line-height: 1.4;
+    border-radius: 7px;
+    font-style: italic;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    color: white;
+}
+
+.wp-block-quote.is-style-large::before,
+.blog_mode_post blockquote::before{
+    position: absolute;
+    font-size: 4rem;
+    font-style: normal;
+    font-family: "FontAwesome";
+    content: "\f10d";
+    left: 30px;
+    top: 10px;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 900;
+    background: transparent;
+    width: auto;
+}
+
+:root .has-cyan-bluish-gray-background-color{
+    background-color: #abb8c3;
+}
+.wp-block-pullquote[class*="-background-color"] > blockquote {
+    background: none !important;
+    box-shadow:  none;
+}
+
+.wp-block-pullquote[class*="-background-color"] > blockquote:before{
+    background-color: #ffffff;
+    left: auto !important;
+    transform: none !important;
+}
+
+.wp-block-image figcaption{
+    margin-bottom: 0;
+    max-height: 70%;
+    overflow: scroll;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 10px;
+    font-weight: 600;
+}
+
+figure figcaption.blocks-gallery-caption {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.wp-block-cover p:last-child {
+    margin-bottom: 0;
+}
+
+.widget_rss .widget-title img{
+    display: none;
+}
+.widget_rss .widget-title a:first-child:before {
+    content: "\f09e";
+    font-family: "FontAwesome";
+    display: inline-block;
+    font-size: 0.9em;
+    color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.widget_rss li + li {
+    margin-top: 1.5rem;
+}
+span.rss-date {
+    opacity: .6;
+}
+.widget p + p, .widget p + div, .widget p + form {
+    margin-top: 1em;
+}
+
+.widget p {
+    margin: 0;
+}
+img.alignleft, img.alignright {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.wp-block-search .wp-block-search__input {
+    flex-grow: 1;
+    min-width: 3em;
+    padding: 0.89em 1.3em;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: 4px;
+}
+.wp-block-search button {
+    display: inline-block;
+    padding: 0.7rem 1.3rem 0.7rem;
+    font-size: 1rem;
+    outline: none;
+    align-items: center;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    text-transform: capitalize;
+    line-height: 21px;
+}
+.wp-block-search .wp-block-search__button{
+    color: #fff;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    border-color: var( --weddingdir-color-cyan, #00aeaf );
+    padding: 10px 25px;
+}
+.wp-block-search .wp-block-search__button:hover{
+    color: #fff;
+    background-color: var( --weddingdir-color-dark-cyan, #009091 );
+    border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+pre.wp-block-code > code {
+    display: block;
+    vertical-align: top;
+    padding: 1em;
+    border-color: #f6f8fa;
+}
+
+.wp-calendar-nav .wp-calendar-nav-next a {
+    float: right;
+}
+.wp-calendar-table caption {
+    text-align: center;
+}
+
+select::-ms-expand {
+    display: none;
+}
+.select_container {
+    color: #596172;
+    border-color: #ebebeb;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 5px;
+}
+.woocommerce-input-wrapper .select_container:after {
+    display: none;
+}
+.select_container:after {
+    content: '\f078';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: #27304b;
+    right: 15px;
+    position: absolute;
+    pointer-events: none;
+    top: 18px;
+}
+.select_container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.wp-block-table table td, .wp-block-table table th {
+    padding: 1.15em 2.2em;
+}
+.wp-block-group.has-background {
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+body.no-sidebar .alignwide {
+    position: relative;
+    left: calc( -585px + 50%);
+    width: 1170px;
+    max-width: none;
+}
+body.no-sidebar .alignfull {
+    margin-left: calc( -100vw / 2 + 100% / 2);
+    margin-right: calc( -100vw / 2 + 100% / 2);
+    width: 100vw;
+    max-width: 100vw;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.wp-block-embed.is-type-video figcaption {
+    margin-top: -20px;
+}
+.wp-block-cover{
+    color: #fff;
+}
+.wp-block-cover .wp-block-cover-text a:hover {
+    color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+figure.wp-block-image figcaption a {
+    color: #ffffff;
+}
+
+figure.wp-block-gallery figcaption a {
+    color: #fff;
+}
+
+.gallery, .wp-block-search, .wp-block-archives, .wp-block-categories, .wp-block-calendar{
+    margin-bottom: 1.5em;
+}
+
+.wp-block-pullquote:not(.is-style-solid-color) blockquote{
+    background: #fff;
+    border: none;
+    position: relative;
+    font-size: 1.25rem;
+    padding: 2rem 2rem 2rem 5rem;
+    line-height: 1.4;
+    border-radius: 7px;
+    font-style: italic;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    color: white;
+    text-align: left;
+}
+.wp-block-pullquote:not(.is-style-solid-color){
+    background: #fff;
+    border: none;
+    position: relative;
+    font-size: 1.25rem;
+    padding: 2rem 2rem 2rem 5rem;
+    line-height: 1.4;
+    border-radius: 7px;
+    font-style: italic;
+    background-color: var( --weddingdir-color-cyan, #00aeaf );
+    color: white;
+    text-align: left;
+}
+.wp-block-pullquote:not(.is-style-solid-color) blockquote:before{
+    position: absolute;
+    font-size: 4rem;
+    font-style: normal;
+    font-family: "FontAwesome";
+    content: "\f10d";
+    left: 60px;
+    top: 10px;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 900;
+    background: transparent;
+    width: auto;
+}
+.wp-block-pullquote.is-style-solid-color blockquote p {
+    font-size: 32px;
+    text-align: left;
+    margin: auto;
+    max-width: 60%;
+    font-style: initial;
+}
+.wp-block-pullquote.is-style-solid-color blockquote cite{
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+.wp-block-pullquote.is-style-solid-color blockquote {
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    overflow-wrap: break-word;
+    color: #fff;
+}
+.wp-block-pullquote[class*="-background-color"] > blockquote {
+    background: none !important;
+}
+body.no-sidebar .wp-block-columns.alignfull .wp-block-column {
+    padding: 0 15px;
+}
+
+
+.alignleft {
+    float: left;
+    margin-right: 1.75em;
+}
+.alignright {
+    display: inline-block !important;
+    float: right;
+    margin-left: 2em;
+}
+
+figure figcaption a{
+    color: #000;
+}
+figure figcaption a:hover{
+    color: #FFF;
+}
+.wp-block-button.is-style-squared a, .wp-block-button__link.wp-block-button.is-style-squared a{
+    border-radius: 0;
+}
+
+.weddingdir-singular-page .wp-block-pullquote blockquote::before, 
+.weddingdir-singular-page .wp-block-pullquote .blockquote::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.wp-block-tag-cloud a{
+    background-color: #f8f8f9;
+    margin-bottom: 7px;
+    margin-right: 4px;
+}
+.wp-block-tag-cloud a:hover{
+    background: var( --weddingdir-color-cyan, #00aeaf );
+    color: white;
+}
+.wp-block-calendar a{
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    body.no-sidebar .alignwide {
+        width: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    article.sticky .post-content{
+        padding: 2em;
+    }
+    img.alignleft, img.alignright, figure.alignleft, figure.alignright{
+        float: none !important;
+        margin: 1em auto !important;
+    }
+}
+@media (max-width: 575px) {
+    .post-password-form input[type="password"] {
+        display: block;
+    }
+}
+
+figure.wp-block-gallery img {
+    height: auto;
+}
+blockquote.has-text-color.has-very-dark-gray-color:before {
+   display: none;
+}
+blockquote.has-text-color.has-very-dark-gray-color p:before{
+     position: absolute;
+     font-size: 4rem;
+     font-style: normal;
+     font-family: "FontAwesome";
+     content: "\f10d";
+     top: 0;
+     color: #fff;
+     opacity: 0.2;
+     font-weight: 900;
+     background: transparent;
+     width: auto;
+     display: inherit;
+     margin-left: -49px;
+     margin-top: -49px;
+}
+blockquote.wp-block-pullquote:not(.is-style-solid-color):before,
+.wp-block-pullquote:not(.is-style-solid-color) blockquote:before{
+    position: absolute;
+    font-size: 4rem;
+    font-style: normal;
+    font-family: "FontAwesome";
+    content: "\f10d";
+    left: 60px;
+    top: 10px;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 900;
+    background: transparent;
+    width: auto;
+}
+
+.entry-content img{
+    height: auto;
+}
+
+figure.wp-block-audio figcaption {
+    position: relative;
+    padding: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    opacity: 1;
+}
+figure.wp-block-pullquote blockquote {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+figure.wp-block-pullquote:not(.is-style-solid-color) {
+    padding: 0;
+    margin: 20px 0;
+}
+blockquote.wp-block-pullquote:not(.is-style-solid-color) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+figure.wp-block-pullquote.is-style-solid-color,
+figure.wp-block-pullquote.is-style-solid-color blockquote {
+    background: #abb8c3;
+}
+figure.wp-block-pullquote.is-style-solid-color blockquote:before{
+    display: none;
+}
+figure.wp-block-pullquote.is-style-solid-color:before {
+    position: absolute;
+    font-size: 4rem;
+    font-style: normal;
+    font-family: "FontAwesome";
+    content: "\f10d";
+    left: 60px;
+    top: 10px;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 900;
+    background: transparent;
+    width: auto;
+    z-index: 1;
+}
+figure.wp-block-embed-vimeo iframe {
+    margin-bottom: 20px;
+    width: 100% !important;
+}
+figure.wp-block-pullquote.is-style-solid-color:before {
+    display: none;
+}
+.wp-block-cover-image-text{
+    color: #ffffff;
+}
+.main-content img {
+    height: auto;
+}
+span.wpcf7-spinner {
+    display: inherit;
+}
+
+
+
+@media (min-width: 1024px) {
+    body.right-sidebar #comments {
+        margin-bottom: 0px;
+    }
+}

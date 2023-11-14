@@ -1,0 +1,2749 @@
+@charset "UTF-8";
+
+/* ------------
+ * CSS Document
+ * ------------------------------------------------------------
+ * Template :  WeddingDir - Directory & Listing WordPress Theme
+ * ------------------------------------------------------------
+ * [CSS Table of contents]
+ * -----------------------
+
+	1.  Body / Typography 
+
+	2.  Form Elements
+
+	3.  Buttons
+
+	4.  General / Elements
+
+        4.1 Primary Colour
+        4.2 Background Color
+        4.3 Paginations
+        4.4 Sidebar Nav
+        4.5 Margin/Padding Spacing
+        4.6 Preloader
+        4.7 Back To Top
+        4.8 Blockquote
+        --------------
+
+	5. Header / Navigations
+
+        5.1 Header Regular
+        5.2 Header Top Bar
+        5.3 Navigation Regular
+        5.4 Page Header
+        -----------------------
+
+	6. Slider
+
+	    6.1 Main Home Slider Slider
+	    ---------------------------
+
+	7. Shortcodes
+
+	    7.1  Icons Boxes
+	    7.2  Accordian
+	    7.3  Tabbing
+	    7.4  Icon Listing
+	    -----------------------
+
+	8. Forms Elements
+
+	    8.1  Default Style
+	    8.2  Form Light
+	    8.3  Select Dropdown
+	    8.4  Range Slider
+
+	9. Pages Content
+
+	    9.1  About Us
+	    9.2  Pricing
+	    9.3  Error Page
+	    9.4  Faq's
+	    9.5  Contact US
+	    9.6  Blog Content
+	    9.7  Vendors Pages
+	    9.8  Wedding Listing
+	    9.9  Real Wedding
+	    9.10  Search Result
+	    9.11  Home Styles
+	    9.12  Sign/Register
+	    9.13  Fashion Gallery
+
+	10. Meat Our Team
+
+	11. Customer Feedback
+
+	12. Rating/Reviews
+
+	13. Modal Popups
+
+	14. Jquery UI Calendar
+
+	15. Footers
+
+	16. Media Queries
+
+------------------------------------------------------------------- */
+
+:root {
+
+	/**
+     *  Original Colors
+     *  ---------------
+     */
+	--weddingdir-color-orange: #f48f00;
+	--weddingdir-color-light-orange: #d47c00;
+	--weddingdir-color-rgba-orange: rgba(244, 143, 1, 0.8);
+
+
+	--weddingdir-color-cyan: #00aeaf;
+	--weddingdir-color-dark-cyan: #009091;
+	--weddingdir-color-light-cyan: #00adae;
+	--weddingdir-color-rgba-cyan: rgba(0, 174, 175, 0.9);
+
+	--weddingdir-color-teal: #005b5c;
+
+	/**
+	 *  Listing Singular Page Header Background Color
+	 *  ---------------------------------------------
+	 */
+	--weddingdir-color-skin: #fef4e6;
+
+	/**
+	 *  3rd party plugin animation root
+	 *  -------------------------------
+	 */
+	--animate-duration: 1s;
+}
+
+/*------------------------------------------------------------------
+1.  Body / Typography 
+-------------------------------------------------------------------*/
+
+::selection {
+	background: var( --weddingdir-color-cyan, #00aeaf );
+	color: white;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 0.95rem;
+	font-weight: 400;
+	color: #444444;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* Links Setting */
+a{
+	color: var( --weddingdir-color-cyan, #00aeaf );
+	text-decoration: none;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+a:hover {
+	color: var( --weddingdir-color-orange, #f48f00 );
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Old Standard TT', serif;
+	color: #121212;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h1 small {
+	display: block;
+	color: #444444;
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+}
+
+ol li,
+ul li {
+	margin: 10px 0;
+}
+
+ol,
+ul {
+	padding-left: 1.5em;
+}
+
+dd {
+	margin-left: 1.5em;
+}
+
+ul[class*=select2-] li,
+ul.list-unstyled.gallery li,
+ul.nav-pills li,
+ul.nav-pills li,
+ul.share-menu li {
+	margin: 0px;
+}
+
+ul.list-unstyled li a::before {
+	display: none;
+}
+
+ul.list-unstyled li {
+	padding-left: 0;
+}
+
+.border-bottom,
+.border-top,
+.border-left {
+	border-color: #f4f4f4 !important;
+}
+
+/**
+ *  Dropdown Hover to Active
+ *  ------------------------
+ */
+
+.hover_out > .dropdown-menu {
+    font-size: 0.875rem;
+    background: #fff;
+    background: #fff;
+    min-width: 130px;
+}
+.hover_out > .dropdown-menu a {
+    padding: 0.5rem;
+}
+.hover_out > .dropdown-menu a:not(:last-child) {
+    border-bottom: 1px solid #efefef;
+}
+.hover_out > .dropdown-menu i {
+    width: 25px;
+    text-align: center;
+}
+.hover_out > .dropdown-menu{
+	padding: 0;
+}
+.hover_out > .dropdown-menu a:hover{
+	background: var( --weddingdir-color-cyan, #00aeaf );
+	color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+@media (min-width: 991.99px) {
+    .hover_out {
+        display: inline-block;
+    }
+    .hover_out:hover > a {
+        background: var( --weddingdir-color-cyan, #00aeaf );
+        color: #fff;
+        border-color: var( --weddingdir-color-cyan, #00aeaf );
+    }
+    .hover_out:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+/*----------------------- 
+Background Color / Color
+-------------------------*/
+
+.bg-default {
+	background-color: var( --weddingdir-color-orange, #f48f00 ) !important;
+}
+
+.bg-primary {
+	background-color: var( --weddingdir-color-cyan, #01a1a2 ) !important;
+	color: #fff;
+}
+
+.bg-secondary {
+	background-color: #383333 !important;
+	color: #fff;
+}
+
+.bg-success {
+	background-color: #129e32 !important;
+}
+
+.bg-danger {
+	background-color: #da0419 !important;
+}
+
+.bg-warning {
+	background-color: #f3b600 !important;
+}
+
+.bg-info {
+	background-color: var( --weddingdir-color-dark-cyan, #009091 ) !important;
+}
+
+.bg-dark {
+	background-color: #4b4645 !important;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+.bg-light {
+	background-color: #f8f8f9 !important;
+}
+
+.txt-default {
+	color: var( --weddingdir-color-orange, #f48f00 ) !important;
+}
+
+.txt-primary {
+	color: var( --weddingdir-color-cyan, #01a1a2 ) !important;
+}
+
+.txt-secondary {
+	color: #383333 !important;
+}
+
+.txt-success {
+	color: #129e32 !important;
+}
+
+.txt-danger {
+	color: #da0419 !important;
+}
+
+.txt-warning {
+	color: #f3b600 !important;
+}
+
+.txt-info {
+	color: var( --weddingdir-color-dark-cyan, #009091 ) !important;
+}
+
+.txt-dark {
+	color: #4b4645 !important;
+}
+
+.txt-white {
+	color: #ffffff;
+}
+
+.txt-light {
+	color: #f8f8f9 !important;
+}
+
+
+/*--------------------------- 
+3. Buttons
+-----------------------------*/
+.btn {
+	display: inline-block;
+	padding: 0.7rem 1.3rem 0.7rem;
+
+	font-size: 1rem;
+	outline: none;
+	align-items: center;
+	position: relative;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+	text-transform: capitalize;
+	line-height: 21px;
+}
+
+.btn-rounded {
+	border-radius: 50px;
+}
+
+/*--- btn default --*/
+.btn-default,
+.btn-default:disabled,
+.btn-default:hover:disabled {
+	color: #fff;
+	background-color: var( --weddingdir-color-orange, #f48f00 );
+	border-color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.btn-default:hover,
+.btn-default:hover:enabled {
+	color: #fff;
+	background-color: var( --weddingdir-color-light-orange, #d47c00 );
+	border-color: var( --weddingdir-color-light-orange, #d47c00 );
+}
+
+.btn-default.focus,
+.btn-default:focus {
+	color: #fff;
+	background-color: var( --weddingdir-color-light-orange, #d47c00 );
+	border-color: var( --weddingdir-color-light-orange, #d47c00 );
+	box-shadow: none;
+}
+
+.btn-default:not(:disabled):not(.disabled).active,
+.btn-default:not(:disabled):not(.disabled):active,
+.show>.btn-default.dropdown-toggle {
+	color: #fff;
+	background-color: var( --weddingdir-color-orange, #f48f00 );
+	border-color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+/*--- btn primary --*/
+.btn-primary,
+.btn-primary:disabled,
+.btn-primary:hover:disabled {
+	color: #fff;
+	background-color: var( --weddingdir-color-cyan, #00aeaf );
+	border-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: var( --weddingdir-color-dark-cyan, #009091 );
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+	color: #fff;
+	background-color: var( --weddingdir-color-dark-cyan, #009091 );
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+	box-shadow: 0 0 0 1px rgb(45, 132, 131);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: var( --weddingdir-color-dark-cyan, #009091 );
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+	box-shadow: none !important;
+}
+
+/*--- btn secondary --*/
+.btn-secondary,
+.btn-secondary:disabled,
+.btn-secondary:hover:disabled {
+	color: #fff;
+	background-color: #4b4645;
+	border-color: #4b4645;
+}
+
+.btn-secondary:hover {
+	color: #fff;
+	background-color: #383333;
+	border-color: #383333;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+	color: #fff;
+	background-color: #383333;
+	border-color: #383333;
+	box-shadow: 0 0 0 1px rgb(45, 163, 47);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: #383333;
+	border-color: #383333;
+}
+
+/*--- btn success --*/
+.btn-success {
+	color: #fff;
+	background-color: #28a745;
+	border-color: #28a745;
+}
+
+.btn-success:hover {
+	color: #fff;
+	background-color: #129e32;
+	border-color: #129e32;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+	color: #fff;
+	background-color: #129e32;
+	border-color: #129e32;
+	box-shadow: 0 0 0 1px rgb(18, 158, 50);
+}
+
+/*--- btn danger --*/
+.btn-danger {
+	color: #fff;
+	background-color: #dc3645;
+	border-color: #dc3645;
+}
+
+.btn-danger:hover {
+	color: #fff;
+	background-color: #da0419;
+	border-color: #da0419;
+}
+
+.btn-danger.focus,
+.btn-danger:focus {
+	color: #fff;
+	background-color: #da0419;
+	border-color: #da0419;
+	box-shadow: 0 0 0 1px rgb(218, 4, 25);
+}
+
+/*--- btn warning --*/
+.btn-warning {
+	color: #212529;
+	background-color: #ffc209;
+	border-color: #ffc209;
+}
+
+.btn-warning:hover {
+	color: #212529;
+	background-color: #f3b600;
+	border-color: #f3b600;
+}
+
+.btn-warning.focus,
+.btn-warning:focus {
+	color: #212529;
+	background-color: #f3b600;
+	border-color: #f3b600;
+	box-shadow: 0 0 0 1px rgb(238, 182, 0);
+}
+
+/*--- btn info --*/
+.btn-info {
+	color: #fff;
+	background-color: #18a2b9;
+	border-color: #18a2b9;
+}
+
+.btn-info:hover {
+	color: #fff;
+	background-color: var( --weddingdir-color-dark-cyan, #009091 );
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+.btn-info.focus,
+.btn-info:focus {
+	color: #fff;
+	background-color: var( --weddingdir-color-dark-cyan, #009091 );
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+	box-shadow: 0 0 0 1px rgb(238, 184, 22);
+}
+
+/*--- btn light --*/
+.btn-light {
+	color: #44413a;
+	background-color: #f4f2ee;
+	border-color: #f4f2ee;
+}
+
+.btn-light:hover {
+	color: #2e2f39;
+	background-color: #e2dfd7;
+	border-color: #e2dfd7;
+}
+
+.btn-light.focus,
+.btn-light:focus {
+	color: #2e2f39;
+	background-color: #e2dfd7;
+	border-color: #e2dfd7;
+	box-shadow: 0 0 0 1px rgb(215, 215, 223);
+}
+
+/*--- btn dark --*/
+.btn-dark {
+	color: #fff;
+	background-color: #716d6c;
+	border-color: #716d6c;
+}
+
+.btn-dark:hover {
+	color: #fff;
+	background-color: #4b4645;
+	border-color: #4b4645;
+}
+
+.btn-dark.focus,
+.btn-dark:focus {
+	color: #fff;
+	background-color: #272a2e;
+	border-color: #272a2e;
+	box-shadow: 0 0 0 1px rgb(39, 42, 46);
+}
+
+/*--- btn gray --*/
+.btn-gray {
+	color: #716d6c;
+	background-color: #dddcda;
+	border-color: #dddcda;
+}
+
+.btn-gray:hover {
+	color: #716d6c;
+	background-color: #e3e0da;
+	border-color: #e3e0da;
+}
+
+.btn-gray.focus,
+.btn-gray:focus {
+	color: #716d6c;
+	background-color: #e3e0da;
+	border-color: #e3e0da;
+	box-shadow: 0 0 0 1px rgb(220, 220, 220);
+}
+
+/*--- btn white --*/
+
+.btn-white {
+	color: #716d6c;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.btn-white:hover {
+	color: #fff;
+	background-color: #f94e29;
+	border-color: #f94e29;
+}
+
+.btn-white.focus,
+.btn-white:focus {
+	color: #fff;
+	background-color: #f94e29;
+	border-color: #f94e29;
+	box-shadow: 0 0 0 1px rgb(255, 77, 77);
+}
+
+/*--- btn outline default --*/
+.btn-default.btn-outline,
+.btn-outline-default,
+.btn-outline-default:disabled,
+.btn-outline-default:hover:disabled {
+	color: var( --weddingdir-color-orange, #f48f00 );
+	background-color: transparent;
+	border-color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.btn-default.btn-outline:hover,
+.btn-outline-default:hover {
+	color: var( --weddingdir-color-light-orange, #d47c00 );
+	background-color: transparent;
+	border-color: var( --weddingdir-color-light-orange, #d47c00 );
+}
+
+.btn-default.btn-outline.focus,
+.btn-default.btn-outline:focus,
+.btn-outline-default.focus,
+.btn-outline-default:focus {
+	color: #ff9285;
+	background-color: transparent;
+	border-color: var( --weddingdir-color-light-orange, #d47c00 );
+	box-shadow: 0 0 0 1px rgb(255, 159, 139);
+}
+
+/*--- btn outline primary --*/
+.btn-primary.btn-outline,
+.btn-primary.btn-outline:disabled,
+.btn-primary.btn-outline:hover:disabled,
+.btn-outline-primary,
+.btn-outline-primary:disabled,
+.btn-outline-primary:hover:disabled {
+	color: var( --weddingdir-color-cyan, #00aeaf );
+	background-color: transparent;
+	border-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.btn-check+.btn-outline-primary, .btn-check+.btn-outline-primary, .btn-check+.btn-outline-primary{
+	font-size: 14px;
+	color: #000;
+}
+.btn-check:hover+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary, 
+.btn-check:checked+.btn-outline-primary{
+    color: #000;
+    background: #e3f5f5;
+    border-color: var(--weddingdir-color-cyan, #009091 );
+}
+.btn-check:focus+.btn-outline-primary, .btn-outline-primary:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-outline-primary:hover {
+	color: var( --weddingdir-color-dark-cyan, #009091 );
+	background-color: transparent;
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+.btn-primary.btn-outline.focus,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-primary.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.btn-outline.dropdown-toggle:focus,
+.btn-outline-primary.focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+	color: var( --weddingdir-color-dark-cyan, #009091 );
+	background-color: transparent;
+	border-color: var( --weddingdir-color-dark-cyan, #009091 );
+	box-shadow: 0 0 0 1px rgb(0, 189, 167);
+}
+
+/*--- btn outline secondary --*/
+.btn-secondary.btn-outline,
+.btn-outline-secondary {
+	color: #5a6268;
+	background-color: transparent;
+	border-color: #5a6268;
+}
+
+.btn-secondary.btn-outline:hover,
+.btn-outline-secondary:hover {
+	color: #383333;
+	background-color: transparent;
+	border-color: #383333;
+}
+
+.btn-secondary.btn-outline.focus,
+.btn-secondary.btn-outline:focus,
+.btn-secondary.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-secondary.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.btn-outline.dropdown-toggle:focus,
+.btn-outline-secondary.focus,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-secondary.dropdown-toggle:focus {
+	color: #383333;
+	background-color: transparent;
+	border-color: #383333;
+	box-shadow: 0 0 0 1px rgb(45, 163, 47);
+}
+
+/*--- btn outline success --*/
+.btn-success.btn-outline,
+.btn-outline-success {
+	color: #28a745;
+	background-color: transparent;
+	border-color: #28a745;
+}
+
+.btn-success.btn-outline:hover,
+.btn-outline-success:hover {
+	color: #1c9337;
+	background-color: transparent;
+	border-color: #1c9337;
+}
+
+.btn-success.btn-outline.focus,
+.btn-success.btn-outline:focus,
+.btn-success.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-success.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-success.btn-outline.dropdown-toggle:focus,
+.btn-outline-success.focus,
+.btn-outline-success:focus,
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-success.dropdown-toggle:focus {
+	color: #1c9337;
+	background-color: transparent;
+	border-color: #1c9337;
+	box-shadow: 0 0 0 1px rgb(40, 167, 69);
+}
+
+/*--- btn outline danger --*/
+.btn-danger.btn-outline,
+.btn-outline-danger {
+	color: #dc3645;
+	background-color: transparent;
+	border-color: #dc3645;
+}
+
+.btn-danger.btn-outline:hover,
+.btn-outline-danger:hover {
+	color: #af1d2a;
+	background-color: transparent;
+	border-color: #af1d2a;
+}
+
+.btn-danger.btn-outline.focus,
+.btn-danger.btn-outline:focus,
+.btn-danger.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-danger.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-danger.btn-outline.dropdown-toggle:focus,
+.btn-outline-danger.focus,
+.btn-outline-danger:focus,
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-danger.dropdown-toggle:focus {
+	color: #af1d2a;
+	background-color: transparent;
+	border-color: #af1d2a;
+	box-shadow: 0 0 0 1px rgb(239, 23, 44);
+}
+
+/*--- btn outline warning --*/
+.btn-warning.btn-outline,
+.btn-outline-warning {
+	color: #212529;
+	background-color: transparent;
+	border-color: #ffc209;
+}
+
+.btn-warning.btn-outline:hover,
+.btn-outline-warning:hover {
+	color: #e7b00a;
+	background-color: transparent;
+	border-color: #e7b00a;
+}
+
+.btn-warning.btn-outline.focus,
+.btn-warning.btn-outline:focus,
+.btn-warning.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-warning.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-warning.btn-outline.dropdown-toggle:focus,
+.btn-outline-warning.focus,
+.btn-outline-warning:focus,
+.btn-outline-warning:not(:disabled):not(.disabled).active:focus,
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-warning.dropdown-toggle:focus {
+	color: #e7b00a;
+	background-color: transparent;
+	border-color: #e7b00a;
+	box-shadow: 0 0 0 1px rgb(255, 194, 9);
+}
+
+/*--- btn outline info --*/
+.btn-info.btn-outline,
+.btn-outline-info {
+	color: #18a2b9;
+	background-color: transparent;
+	border-color: #18a2b9;
+}
+
+.btn-info.btn-outline:hover,
+.btn-outline-info:hover {
+	color: #077a8d;
+	background-color: transparent;
+	border-color: #077a8d;
+}
+
+.btn-info.btn-outline.focus,
+.btn-info.btn-outline:focus,
+.btn-info.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-info.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-info.btn-outline.dropdown-toggle:focus,
+.btn-outline-info.focus,
+.btn-outline-info:focus,
+.btn-outline-warning:not(:disabled):not(.disabled).active:focus,
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-warning.dropdown-toggle:focus {
+	color: #077a8d;
+	background-color: transparent;
+	border-color: #077a8d;
+	box-shadow: 0 0 0 1px rgb(24, 162, 185);
+}
+
+/*--- btn outline light --*/
+.btn-light.btn-outline,
+.btn-outline-light {
+	color: #2e2f39;
+	background-color: transparent;
+	border-color: #ebebed;
+}
+
+.btn-light.btn-outline:hover,
+.btn-outline-light:hover {
+	color: #d6d6d9;
+	background-color: transparent;
+	border-color: #d6d6d9;
+}
+
+.btn-light.btn-outline.focus,
+.btn-light.btn-outline:focus,
+.btn-light.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-light.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-light.btn-outline.dropdown-toggle:focus .btn-outline-light.focus,
+.btn-outline-light:focus,
+.btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-light.dropdown-toggle:focus {
+	color: #d6d6d9;
+	background-color: transparent;
+	border-color: #d6d6d9;
+	box-shadow: 0 0 0 1px rgb(235, 235, 237);
+}
+
+/*--- btn outline-dark --*/
+.btn-dark.btn-outline,
+.btn-outline-dark {
+	color: #716d6c;
+	background-color: transparent;
+	border-color: #716d6c;
+}
+
+.btn-dark.btn-outline:hover,
+.btn-outline-dark:hover {
+	color: #282424;
+	background-color: transparent;
+	border-color: #282424;
+}
+
+.btn-dark.btn-outline.focus,
+.btn-dark.btn-outline:focus,
+.btn-dark.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-dark.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show>.btn-dark.btn-outline.dropdown-toggle:focus,
+.btn-outline-dark.focus,
+.btn-outline-dark:focus,
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-dark.dropdown-toggle:focus {
+	color: #282424;
+	background-color: transparent;
+	border-color: #282424;
+	box-shadow: 0 0 0 1px rgb(46, 47, 57);
+}
+
+/*--- btn outline-white --*/
+.btn-white,
+.btn-outline-white {
+	color: var( --weddingdir-color-cyan, #01a1a2 );
+	background-color: #fff;
+	border-color: #eeeeee;
+}
+
+.btn-white:hover,
+.btn-outline-white:hover {
+	color: #fff;
+	background-color: var( --weddingdir-color-cyan, #01a1a2 );
+	border-color: var( --weddingdir-color-cyan, #01a1a2 );
+}
+
+.btn-white.focus,
+.btn-white:focus,
+.btn-outline-white.focus,
+.btn-outline-white:focus {
+	color: #fff;
+	background-color: var( --weddingdir-color-cyan, #01a1a2 );
+	border-color: var( --weddingdir-color-cyan, #01a1a2 );
+}
+
+/*--- btn size --*/
+.btn-xs {
+	padding: 6px 12px;
+	font-size: 13px;
+	line-height: 1.2;
+}
+
+.btn-sm {
+	padding: 8px 14px;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.btn-lg {
+	padding: 14px 26px;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+/*--- btn links --*/
+.btn-link-default {
+	color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.btn-link-default:hover {
+	color: var( --weddingdir-color-light-orange, #d47c00 );
+}
+
+.btn-link-primary {
+	color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.btn-link-primary:hover {
+	color: var( --weddingdir-color-dark-cyan, #009091 );
+}
+
+.btn-link-secondary {
+	color: #4b4645;
+}
+
+.btn-link-secondary:hover {
+	color: #383333;
+}
+
+/*--- btn focus --*/
+.btn.focus,
+.btn:focus {
+	outline: 0;
+	box-shadow: none !important;
+}
+
+/*-------------------------------------------------------------------
+ 4.  General / Elements
+-------------------------------------------------------------------*/
+
+/*---- 4.1 Primary Colour ---*/
+.txt-blue {
+	color: #2f3985;
+}
+
+.txt-orange {
+	color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.txt-ligt-gray {
+	color: #424242;
+}
+
+.txt-white {
+	color: #fff;
+}
+
+.txt-sky-blue {
+	color: #f1fbff;
+}
+
+/*---- 4.2 Background Color ---*/
+.bg-teal {
+	background: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.bg-teal-dark {
+	background: var( --weddingdir-color-teal, #005b5c );
+}
+
+.bg-orange {
+	background: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.bg-black {
+	background: #000000;
+}
+
+.bg-black-variant {
+	background: #252428;
+}
+
+.bg-dark-gray {
+	background: #302d34;
+}
+
+.bg-light-gray {
+	background: #f8f8f9;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-green {
+	background: #54ba1d;
+}
+
+.bg-yellow {
+	background: #ffc600;
+}
+
+/*---- 4.5 Margin/Padding Spacing ---*/
+.wide-tb-120 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.wide-tb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.wide-tb-90 {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.wide-tb-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.wide-tb-70 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.wide-tb-70 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.wide-tb-60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.wide-tb-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.wide-tb-40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.wide-tb-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/*---- 4.5 Margin/Padding Spacing End ---*/
+
+
+
+
+
+/*-------------------------------------------------------------------
+ 8. Forms Elements
+-------------------------------------------------------------------*/
+
+/*---- 8.1  Default Style ---*/
+.form-control {
+	border: none;
+	box-shadow: none;
+	font-size: 0.9375rem;
+	border: 1px solid #f0f0f0;
+	outline: none;
+	color: #5b5b5b;
+	background-color: #f8f8f9;
+	height: auto;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+.form-control:focus {
+	border: 1px solid #acacac;
+	background: #fff;
+	box-shadow: none;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+	opacity: 0.6;
+}
+
+::-webkit-input-placeholder {
+	/* Edge */
+	color: #5b5b5b;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #5b5b5b;
+}
+
+::placeholder {
+	color: #5b5b5b;
+}
+
+/**
+ *  Input Date
+ *  ==========
+ *  https://stackoverflow.com/questions/7372038/is-there-any-way-to-change-input-type-date-format#answer-59225076
+ *  =============================================================================================================
+ */
+
+input[type="date"]::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
+	padding: 0;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field{
+	margin: 0 10px;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field{
+	margin: 0 10px;
+}
+
+input[type="date"]::-webkit-datetime-edit-day-field{
+	margin: 0 10px 0 0;
+}
+
+
+/**
+ *  Radio Button
+ *  ------------
+ */
+.form-check-input[type=radio]{
+    border-color: #acacac;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.form-check-input:checked[type=radio]{
+    color: #fff;
+    border-color: var(--weddingdir-color-orange, #f29008);
+    background-color: #FFF;
+    border: 4px solid var(--weddingdir-color-orange, #f29008);
+}
+.form-check-input[type=radio]:focus{
+	box-shadow: none;
+}
+label.form-check-label {
+    line-height: 25px;
+}
+.form-check-inline label.form-check-label {
+    line-height: 27px;
+}
+
+/**
+ *  Checkbox
+ *  --------
+ */
+.form-check-input[type=checkbox]{
+    border-color: #acacac;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+.form-check-input:checked[type=checkbox]{
+    color: #fff;
+    border-color: var(--weddingdir-color-orange, #f29008);
+    border: 4px solid var(--weddingdir-color-orange, #f29008);
+}
+.form-check-input[type=checkbox]:focus{
+	box-shadow: none;
+}
+.form-check-input:checked{
+	background-color: var(--weddingdir-color-orange, #f29008);
+	border-color: var(--weddingdir-color-orange, #f29008);
+}
+.form-dark .form-check-input[type=checkbox]:not(:checked){
+	background-color: #f8f8f9;
+}
+
+
+/*---- 8.2  Form Light ---*/
+.form-light.form-control {
+	font-size: 0.9375rem;
+	border: 2px solid #fff;
+	outline: none;
+	color: #131313;
+	background-color: #fff;
+	height: auto;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);
+}
+.form-light.form-control:focus {
+	border: 2px solid #e5e4e6;
+}
+
+.form-light.form-control:disabled,
+.form-light.form-control[readonly] {
+	opacity: 0.6;
+}
+
+.form-light::-webkit-input-placeholder {
+	/* Edge */
+	color: #5b5b5b;
+}
+
+.form-light:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #5b5b5b;
+}
+
+.form-light::placeholder {
+	color: #5b5b5b;
+}
+
+.form-light .custom-control-label {
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 0;
+	vertical-align: top;
+	padding: 5px 0 0 12px;
+}
+
+.form-light .custom-control {
+	color: #5b5b5b;
+}
+
+.form-light.custom-checkbox .custom-control-label::before,
+.form-light.custom-checkbox .custom-control-label::after {
+	border-radius: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+.form-light.custom-radio .custom-control-label::before {
+	width: 25px;
+	height: 25px;
+}
+
+.form-light.custom-radio .custom-control-input:checked~.custom-control-label::after {
+	background-image: none;
+	width: 19px;
+	height: 19px;
+	background-color: #fff;
+	border-radius: 50%;
+	left: -21px;
+	top: 7px;
+}
+
+.form-light .custom-control-label::before {
+	border-color: #f0f0f0;
+	background: #fff;
+}
+
+.form-light .custom-control-input:focus~.custom-control-label::before {
+	box-shadow: none;
+}
+
+.form-light .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+	border-color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.form-light .custom-control-input:checked~.custom-control-label::before,
+.form-light .custom-control-input:not(:disabled):active~.custom-control-label::before {
+	color: #fff;
+	border-color: var( --weddingdir-color-orange, #f48f00 );
+	background-color: var( --weddingdir-color-orange, #f48f00 );
+}
+
+.form-light .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+	background-image: none;
+	content: "\f00c";
+	font-family: "FontAwesome";
+	color: #fff;
+	padding: 2px 0 0 5px;
+	font-size: 0.9rem;
+	font-weight: 900;
+}
+
+/*---- 8.2 Form Light End ---*/
+
+/*---- 8.3  Select Dropdown ---*/
+.theme-combo,
+.theme-combo {
+	width: 100%;
+}
+
+/* Default Theme */
+.select2-container {
+	z-index: 9;
+	width: 100% !important;
+}
+
+.select2-results__option--highlighted {
+	background-color: #ffffff;
+	color: #222222;
+}
+
+.select2-container.select2-container .select2-selection--single {
+	padding: 0.8rem;
+	height: auto;
+	border: 1px solid #acacac;
+	border-radius: 5px;
+	background: #f8f8f9;
+	z-index: 3;
+	position: relative;
+}
+
+.select2-container.select2-container--open .select2-selection--single {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #f8f8f9;
+}
+
+.select2-container.select2-container .select2-selection--single:focus {
+	/* box-shadow: none; */
+	outline: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+	height: 100%;
+	position: absolute;
+	top: 1px;
+	right: 10px;
+	width: 30px;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+.select2-container.select2-container--open .select2-selection--single .select2-selection__arrow {
+	transform: rotate(180deg);
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow::after {
+	position: absolute;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-family: "FontAwesome";
+	content: "\f107";
+	left: 50%;
+	top: 50%;
+	color: #acacac;
+	font-weight: 900;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+}
+
+.select2-container .select2-dropdown {
+	border: none;
+	z-index: 9999;
+}
+
+.select2-container .select2-dropdown li {
+	border-top: 1px solid #eeeeee;
+	font-size: 0.875rem;
+	color: #5b5b5b;
+	padding: 0.8rem 1.3rem;
+}
+
+.select2-container .select2-dropdown li:hover {
+	background-color: #ffffff;
+	color: #0a0a0a;
+}
+
+.select2-container .select2-dropdown ul {
+	border-width: 0 1px 1px 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #f8f8f9;
+	position: relative;
+	z-index: 1;
+	border-style: solid;
+	border-color: #acacac;
+	overflow: hidden;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow b {
+	display: none;
+}
+
+.select2-search--dropdown .select2-search__field,
+.select2-search--dropdown .select2-search__field:focus {
+	border: 1px solid #cccccc;
+	outline: none;
+	min-height: 40px;
+}
+
+.select2-container--form-light .select2-dropdown li:hover {
+	background-color: #f6f6f6;
+	color: #0a0a0a;
+}
+.select2-container.select2-container .select2-selection--multiple {
+    padding: 10px;
+    min-height: 60px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background: #f8f8f9;
+    z-index: 3;
+    cursor: text;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select2-selection.select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+    background: #02aeaf;
+    color: #FFF;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.select2-selection.select2-selection--multiple .select2-selection__choice:not(:last-child) {
+    margin-right: 0.8rem;
+    float: left;
+}
+
+/* Default Theme */
+/* Light Theme */
+.select2-container--form-light.select2-container .select2-selection--single {
+	padding: 0.8rem;
+	height: auto;
+	/*box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);*/
+	border-radius: 5px;
+	background: #fff;
+	z-index: 3;
+	position: relative;
+	border: none;
+	margin: 0;
+}
+
+.select2-container--form-light.select2-container .select2-results__option--highlighted {
+	background-color: #f6f6f6;
+	color: #0a0a0a;
+}
+
+.select2-container--form-light.select2-container--open .select2-selection--single {
+	border-bottom: 0;
+	background-color: #fff;
+}
+
+.select2-container--form-light.select2-container .select2-selection--single:focus {
+	/* box-shadow: none; */
+	outline: none;
+}
+
+.select2-container--form-light .select2-selection--single .select2-selection__arrow {
+	height: 100%;
+	position: absolute;
+	top: 1px;
+	right: 10px;
+	width: 30px;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+.select2-container--form-light.select2-container--open .select2-selection--single .select2-selection__arrow {
+	transform: rotate(180deg);
+}
+
+.select2-container--form-light .select2-selection--single .select2-selection__arrow::after {
+	position: absolute;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-family: "FontAwesome";
+	content: "\f107";
+	left: 50%;
+	top: 50%;
+	color: #333333;
+	font-weight: 900;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+}
+
+.select2-container--form-light .select2-dropdown {
+	border: none;
+	z-index: 9999;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.select2-container--form-light .select2-dropdown li {
+	border-top: 1px solid #eeeeee;
+	font-size: 0.875rem;
+	color: #5b5b5b;
+	padding: 0.8rem 1.3rem;
+}
+
+.select2-container--form-light .select2-dropdown li:hover {
+	background-color: #f6f6f6;
+	color: #0a0a0a;
+}
+
+.select2-container--form-light .select2-dropdown ul {
+	box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border: none;
+	background: #fff;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.select2-container--form-light .select2-selection--single .select2-selection__arrow b {
+	display: none;
+}
+
+/* Light Theme */
+/*---- 8.3 Select Dropdown End ---*/
+
+/*---- 8.4  Range Slider ---*/
+#slider-range {
+	position: relative;
+}
+
+#slider-range .btn {
+	margin-top: 25px;
+	position: absolute;
+	padding: 0.5rem;
+	min-width: auto;
+
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+#slider-range .ui-state-focus .btn {
+	left: -15px;
+}
+
+.ui-slider-handle:hover .slider-tip {
+	opacity: 1;
+	/* opacity:1;
+    bottom:120%; */
+}
+
+/*---- 8.4  Range Slider End ---*/
+
+
+/**
+ *  Card Style
+ *  ----------
+ */
+.card-shadow {
+	border-radius: 7px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0.1px 0.33px 3px 0px rgb(0 0 0 / 15%);
+}
+
+.card-shadow:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.card-shadow-header {
+	border-bottom: 1px solid #f4f4f4;
+	padding: 1rem 1.5rem;
+	color: #232323;
+}
+
+.card-shadow-header h3 {
+	margin-bottom: 0;
+	font-weight: 700;
+}
+
+.card-shadow-header i {
+	color: var( --weddingdir-color-cyan, #00aeaf );
+	margin-right: 6px;
+}
+
+.card-shadow-body {
+	padding: 1.5rem;
+}
+
+
+/*------------------------------------------*/
+/*    Owl Slider Arrow
+/*------------------------------------------*/
+.owl-carousel.weddingdir-owl-carousel{
+	margin-bottom: 60px;
+}
+.owl-carousel.weddingdir-owl-carousel .owl-dots{
+	bottom: -60px;
+}
+.owl-nav {
+	text-align: center;
+	margin-top: 0px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+	position: absolute;
+	height: 52px;
+	width: 52px;
+	background: rgba(0, 0, 0, 0.5);
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 700;
+
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+.owl-carousel .owl-nav button:hover,
+.owl-carousel .owl-nav button:hover {
+	background: rgba(0, 0, 0, 1);
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+	left: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+	right: 20px;
+}
+
+.owl-carousel .owl-dots {
+	text-align: center;
+	margin-top: 0;
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	background: #fff;
+	padding: 0.2rem 0.7rem;
+	border-radius: 50px;
+	transform: translateX(-50%);
+	box-shadow: 0.1px 0.33px 3px 0px rgb(0 0 0 / 15%);
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.owl-carousel .owl-dots button {
+	outline: none;
+}
+
+.owl-carousel .owl-dots button span {
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin: 0px 4px;
+	border-radius: 50%;
+	background: var( --weddingdir-color-orange, #f48f00 );
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+	outline: none;
+	opacity: 0.5;
+	position: relative;
+}
+
+.owl-controls.clickable .owl-dot:hover span,
+.owl-carousel .owl-dot:hover span {
+	opacity: 1;
+}
+
+.owl-carousel .owl-dot.active span {
+	background: var( --weddingdir-color-cyan, #00aeaf );
+	opacity: 1;
+}
+
+.dots-black.owl-carousel .owl-dots {
+	bottom: 0;
+	margin-top: 2rem;
+	position: relative;
+	background: transparent;
+	box-shadow: none;
+}
+
+/**
+ *  ---------
+ *  Accordian
+ *  ---------
+ */
+.theme-accordian.accordion .card-header {
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	position: relative;
+	padding: 0;
+}
+
+.theme-accordian.accordion .card-header a {
+	background-color: var( --weddingdir-color-orange, #f48f00 );
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	margin-bottom: 15px;
+	position: relative;
+	padding: 0.75rem 2.7rem 0.75rem 1.25rem;
+	display: block;
+}
+
+.theme-accordian.accordion .card-header .card-title {
+	color: #fff;
+}
+
+.theme-accordian.accordion .card-header a:after {
+	font-family: "FontAwesome";
+	content: "\f068";
+	position: absolute;
+	font-weight: 900;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-weight: 900;
+	color: #FFF;
+}
+
+.theme-accordian.accordion .card-header .collapsed:after {
+	/* symbol for "collapsed" panels */
+	content: "\f067";
+}
+
+.theme-accordian.accordion .card-header .collapsed {
+	background-color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+.theme-accordian .card-body {
+	padding-top: 0;
+}
+
+/**
+ *  -------
+ *  Tabbing
+ *  -------
+ */
+.theme-tabbing.nav-pills .nav-link {
+
+	border-radius: 5.25rem;
+	color: #b0b0b0;
+	padding: 0.5rem 1.5rem;
+	margin-right: 10px;
+}
+
+.theme-tabbing.nav-pills .nav-link.active {
+	background: var( --weddingdir-color-cyan, #00aeaf );
+	color: #fff;
+}
+
+.theme-tabbing.nav-pills .nav-link svg {
+	padding-right: 6px;
+	width: auto;
+}
+
+.tab-content.theme-tabbing .tab-pane {
+	padding-top: 1.25rem !important;
+}
+
+.theme-tabbing-vertical {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #f0f0f0;
+	border-radius: 7px;
+	background-color: #f8f8f9;
+	padding: 0.8rem 0;
+}
+
+.theme-tabbing-vertical .nav-link {
+	color: #252428;
+	font-size: 1rem;
+	border-left: 2px solid transparent;
+	border-radius: 0;
+}
+
+.theme-tabbing-vertical .nav-link.active,
+.theme-tabbing-vertical .show>.nav-link {
+	color: var( --weddingdir-color-orange, #f48f00 );
+	background-color: transparent;
+	border-left: 2px solid var( --weddingdir-color-orange, #f48f00 );
+}
+
+.horizontal-tab-second {
+	padding: 1rem 1rem 0 1rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(240, 240, 240);
+	border-radius: 7px;
+	background-color: #fff;
+}
+
+.horizontal-tab-second .nav-link {
+	color: #252428;
+	font-size: 1rem;
+	border-bottom: 3px solid transparent;
+	border-radius: 0;
+	margin: 0 7px;
+	padding-top: 0;
+	padding-bottom: 0.8rem;
+}
+
+.horizontal-tab-second .nav-link.active,
+.horizontal-tab-second .show>.nav-link {
+	color: var( --weddingdir-color-orange, #f48f00 );
+	background-color: transparent;
+	border-bottom: 3px solid var( --weddingdir-color-orange, #f48f00 );
+}
+
+
+
+/**
+ *  ---------------
+ *  Bootstrap Model
+ *  ---------------
+ */
+.modal {
+	overflow: auto !important;
+}
+
+.modal .modal-content {
+	overflow: hidden;
+}
+
+button.close {
+	width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    border: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--weddingdir-color-orange, #f48f00 );
+    border-color: var(--weddingdir-color-orange, #f48f00 );
+}
+
+button.close:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+body.modal-open {
+	overflow: hidden;
+	padding: 0 !important;
+}
+
+/**
+ *  -----------
+ *  Back To Top
+ *  -----------
+ */
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	padding: 0;
+	background-color: #f8f8f8;
+	display: none;
+	height: 50px;
+	width: 50px;
+	line-height: 52px;
+	border: none;
+	font-size: 1rem;
+	border-radius: 50%;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+	background: var( --weddingdir-color-orange, #f48f00 );
+	color: #fff;
+}
+
+
+/**
+ *  ---------
+ *  Preloader
+ *  ---------
+ */
+.preloader {
+	background: #302d34;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 1050;
+}
+
+.preloader .status {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.preloader .status img {
+	width: 250px;
+}
+
+/**
+ *  Summary Count Text
+ *  ------------------
+ */
+span.count_message {
+    background-color: #f7f7f7;
+    padding: 3px 10px;
+    border-radius: 45px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    float: right;
+}
+span.count_message.textarea {
+    margin-top: -35px;
+}
+span.count_message.weddingdir-editor {
+    bottom: 50px;
+    position: relative;
+}
+
+/**
+ *  Social Media Color Palatee
+ *  --------------------------
+ * @ref : https://www.lockedownseo.com/social-media-colors/
+ * --------------------------------------------------------
+ */
+.weddingdir-social-weibo {
+	background-color: #df2029;
+}
+
+.weddingdir-social-digg {
+	background-color: #000000;
+}
+
+.weddingdir-social-git {
+	background-color: #24292e;
+}
+
+.weddingdir-social-behance {
+	background-color: #053eff;
+}
+
+.weddingdir-social-rss {
+	background-color: #ee802f;
+}
+
+.weddingdir-social-facebook {
+	background-color: #1877f2;
+}
+
+.weddingdir-social-facebookold {
+	background-color: #3b5998;
+}
+
+.weddingdir-social-twitter {
+	background-color: #1da1f2;
+}
+
+.weddingdir-social-youtube {
+	background-color: #ff0000;
+}
+
+.weddingdir-social-instagrammagenta {
+	background-color: #c32aa3;
+}
+
+.weddingdir-social-instagramblue {
+	background-color: #4c5fd7;
+}
+
+.weddingdir-social-instagrampurple {
+	background-color: #7232bd;
+}
+
+.weddingdir-social-instagramorange {
+	background-color: #f46f30;
+}
+
+.weddingdir-social-instagramyellow {
+	background-color: #ffdc7d;
+}
+
+.weddingdir-social-googleblue {
+	background-color: #4285f4;
+}
+
+.weddingdir-social-googlered {
+	background-color: #ea4335;
+}
+
+.weddingdir-social-googleyellow {
+	background-color: #fbbc05;
+}
+
+.weddingdir-social-googlegreen {
+	background-color: #34a853;
+}
+
+.weddingdir-social-pinterest {
+	background-color: #bd081c;
+}
+
+.weddingdir-social-googleplus {
+	background-color: #db4437;
+}
+
+.weddingdir-social-linkedin {
+	background-color: #0a66c2;
+}
+
+.weddingdir-social-vimeoblue {
+	background-color: #1ab7ea;
+}
+
+.weddingdir-social-tumblr {
+	background-color: #2c4762;
+}
+
+.weddingdir-social-snapchat {
+	background-color: #fffc00;
+}
+
+.weddingdir-social-whatsappgreen {
+	background-color: #25d366;
+}
+
+.weddingdir-social-whatsappteal1 {
+	background-color: #075e54;
+}
+
+.weddingdir-social-whatsappteal2 {
+	background-color: #128c7e;
+}
+
+.weddingdir-social-tiktokblack {
+	background-color: #010101;
+}
+
+.weddingdir-social-tiktookblue {
+	background-color: #69c9d0;
+}
+
+.weddingdir-social-tiktokpink {
+	background-color: #ee1d52;
+}
+
+.weddingdir-social-tiktokwhite {
+	background-color: #fff;
+}
+
+.weddingdir-social-mastodon {
+	background-color: #563acc;
+}
+
+.weddingdir-social-apple {
+	background-color: #a6b1b7;
+}
+
+.weddingdir-social-amazon {
+	background-color: #ff9900;
+}
+
+.weddingdir-social-alexablue {
+	background-color: #00a7ce;
+}
+
+.weddingdir-social-alexadkblue {
+	background-color: #232f3e;
+}
+
+.weddingdir-social-microsoftred {
+	background-color: #f35022;
+}
+
+.weddingdir-social-microsoftgreen {
+	background-color: #80bb03;
+}
+
+.weddingdir-social-microsoftblue {
+	background-color: #03a5f0;
+}
+
+.weddingdir-social-microsoftyellow {
+	background-color: #ffb903;
+}
+
+.weddingdir-social-periscope {
+	background-color: #40a4c4;
+}
+
+.weddingdir-social-foursquarepink {
+	background-color: #f94877;
+}
+
+.weddingdir-social-foursquarenavy {
+	background-color: #073282;
+}
+
+.weddingdir-social-foursquareblue {
+	background-color: #2d5be3;
+}
+
+.weddingdir-social-yelp {
+	background-color: #d32323;
+}
+
+.weddingdir-social-swarm {
+	background-color: #ffa633;
+}
+
+.weddingdir-social-medium {
+	background-color: #02b875;
+}
+
+.weddingdir-social-skypeblue {
+	background-color: #00aff0;
+}
+
+.weddingdir-social-skypedkblue {
+	background-color: #0078d7;
+}
+
+.weddingdir-social-android {
+	background-color: #a4c639;
+}
+
+.weddingdir-social-stumbleupon {
+	background-color: #e94826;
+}
+
+.weddingdir-social-flickrpink {
+	background-color: #f40083;
+}
+
+.weddingdir-social-flickrblue {
+	background-color: #006add;
+}
+
+.weddingdir-social-yahoo {
+	background-color: #430297;
+}
+
+.weddingdir-social-twitch {
+	background-color: #9146ff;
+}
+
+.weddingdir-social-soundcloud {
+	background-color: #ff5500;
+}
+
+.weddingdir-social-spotifygreen {
+	background-color: #1ed760;
+}
+
+.weddingdir-social-spotifydarkgreen {
+	background-color: #1db954;
+}
+
+.weddingdir-social-dribbble {
+	background-color: #ea4c89;
+}
+
+.weddingdir-social-slackpurple {
+	background-color: #4a154b;
+}
+
+.weddingdir-social-slackblue {
+	background-color: #36c5f0;
+}
+
+.weddingdir-social-slackgreen {
+	background-color: #2eb67d;
+}
+
+.weddingdir-social-slackred {
+	background-color: #e01e5a;
+}
+
+.weddingdir-social-slackyellow {
+	background-color: #ecb22e;
+}
+
+.weddingdir-social-reddit {
+	background-color: #ff5700;
+}
+
+.weddingdir-social-deviantart {
+	background-color: #05cc47;
+}
+
+.weddingdir-social-pocket {
+	background-color: #ee4056;
+}
+
+.weddingdir-social-quora {
+	background-color: #aa2200;
+}
+
+.weddingdir-social-quorablue {
+	background-color: #2b6dad;
+}
+
+.weddingdir-social-slideshareorange {
+	background-color: #e68523;
+}
+
+.weddingdir-social-slideshareblue {
+	background-color: #00a0dc;
+}
+
+.weddingdir-social-fivehundredpx {
+	background-color: #0099e5;
+}
+
+.weddingdir-social-vk {
+	background-color: #4a76a8;
+}
+
+.weddingdir-social-listlyorange {
+	background-color: #df6d46;
+}
+
+.weddingdir-social-listlyblue {
+	background-color: #52b1b3;
+}
+
+.weddingdir-social-vine {
+	background-color: #00b489;
+}
+
+.weddingdir-social-steam {
+	background-color: #171a21;
+}
+
+.weddingdir-social-discord {
+	background-color: #5865f2;
+}
+
+.weddingdir-social-telegram {
+	background-color: #0088cc;
+}
+
+.weddingdir-social-clarity {
+	background-color: #61bed9;
+}
+
+.weddingdir-social-homeadvisor {
+	background-color: #f89000;
+}
+
+.weddingdir-social-houzz {
+	background-color: #4dbc15;
+}
+
+.weddingdir-social-angi {
+	background-color: #ff6153;
+}
+
+.weddingdir-social-glassdoor {
+	background-color: #0caa41;
+}
+
+.weddingdir-social-email{
+	background-color: #ea4436;
+}
+
+
+/**
+ *  Share Post on Social Media
+ *  --------------------------
+ */
+.weddingdir-social-media-share-model{
+	margin-bottom: 10px;
+}
+.weddingdir-social-media-share-model a {
+	border-radius: 50%;
+	margin-right: 3.5%;
+	color: white;
+	width: 60px;
+	height: 60px;
+}
+.weddingdir_post_share_model .modal-header .close {
+    color: #acacac;
+    background: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+}
+.weddingdir_post_share_model input[type=text]{
+	color: #000000;
+}
+.weddingdir_post_share_model .input-group-text{
+    border: 0;
+    color: white;
+    background: var( --weddingdir-color-cyan, #00aeaf );
+}
+.copy_success_message{
+	color: red;
+    font-weight: 600;
+}
+.weddingdir-social-media-share-model a {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.weddingdir-social-media-share-model a i {
+    font-size: 25px;
+}
+.weddingdir-share-post-model i{
+	padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+
+	/**
+	 *  Model
+	 *  -----
+	 */
+	.weddingdir-social-media-share-model a {
+	    float: left;
+	    margin-bottom: 10px;
+	    margin-right: 2.5%;
+	    width: 40px;
+	    height: 40px;
+	}
+	.weddingdir-social-media-share-model a i {
+	    font-size: 20px;
+	}
+}
+
+/**
+ *  Listing Location Dropdown
+ *  -------------------------
+ */
+#weddingdir-location-tax-tab-content {
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.weddingdir-listing-location-data {
+	position: absolute;
+	width: 100%;
+	z-index: 12;
+}
+.weddingdir-listing-location-data .card {
+	border-radius: .5rem;
+	box-shadow: 0.1px 0.33px 3px 0px rgb(0 0 0 / 15%);
+	width: 100%;
+	min-width: calc( 100% + 130px );
+}
+
+/**
+ *  State item
+ *  ----------
+ */
+ul.state-item {
+	list-style: none;
+	padding: 20px;
+	column-count: 2;
+	margin-bottom: 0;
+	column-rule: 1px solid #d9d9d9;
+}
+ul.state-item li.state-item-list {
+	break-inside: avoid;
+	margin: 0;
+}
+ul.state-item li a.state-item-anchor {
+	width: 100%;
+	color: #222;
+	font-weight: 600;
+	padding: 0px 15px;
+}
+ul.state-item li.region-item-list{
+	break-inside: avoid;
+	margin-bottom: 0;
+}
+ul.state-item li.state-item-list .state-item-anchor{
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    padding: 10px 10px 0px 10px;
+}
+ul.state-item li.region-item-list .region-item-anchor{
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    padding: 5px 10px 0px 10px;
+}
+ul.state-item .search-item {
+	display: flex;
+	align-items: center;
+}
+
+li.state-item-list {
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0px;
+}
+ul.state-item li.state-item-list a:hover{
+	color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+/**
+ *  Region
+ *  ------
+ */
+ul.region-item{
+	list-style: none;
+	padding: 0;
+}
+ul.region-item li.region-item-list {
+	break-inside: avoid;
+	margin-bottom: 0;
+}
+ul.region-item li.region-item-list a {
+	width: 100%;
+	color: #222;
+}
+ul.region-item li.region-item-list:last-child {
+	padding-bottom: 0;
+}
+ul.region-item li.region-item-list:last-of-type a.region-item-anchor{
+    padding-bottom: 0.5rem;
+}
+ul.region-item li.region-item-list a:hover {
+	color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+/**
+ *  Dropdown
+ *  --------
+ */
+ul.weddingdir-listing-category-data{
+    list-style: none;
+    position: absolute;
+    background: white;
+    padding: 0;
+    width: 340px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.1px 0.33px 3px 0px rgb(0 0 0 / 15%);
+    max-height: 400px;
+    overflow-y: scroll;
+    z-index: 12;
+    border: 1px solid #dadada;
+}
+ul.weddingdir-listing-category-data li{
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #dadada;
+}
+
+.weddingdir-listing-category-data li a{
+    color: #222;
+}
+
+.weddingdir-listing-category-data li:hover a{
+    color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+/**
+ *  Media Object
+ *  ------------
+ */
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/**
+ *  New Dropdown CSS
+ *  ----------------
+ */
+.weddingdir-dropdown-handler{
+	position: relative;
+}
+.weddingdir-dropdown-handler .before-input-box {
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.weddingdir-dropdown-handler .input-group-text{
+    background: white;
+    display: grid;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+.weddingdir-dropdown-handler .input-group-text i{
+	color: var( --weddingdir-color-orange, #f48f00 );
+}
+.weddingdir-input-search-dropdown{
+	display: none;
+}
+.weddingdir-input-search-dropdown.open{
+	display: block;
+}
+.weddingdir-dropdown-handler .form-light.form-control{
+	padding: 0.8rem 1rem 0.8rem 0.2rem;
+}
+.weddingdir-dropdown-handler .form-light.form-control,
+.weddingdir-dropdown-handler .form-light.form-control:focus{
+	box-shadow: none !important;
+	border-color: transparent !important;
+	border: 0 !important;
+}
+
+/**
+ *  Location Input After Search Result data Style
+ *  ---------------------------------------------
+ */
+ul.weddingdir-listing-location-data-dropdown {
+	list-style: none;
+	position: absolute;
+	background: white;
+	padding: 0;
+	width: 340px;
+	border-radius: 7px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0.1px 0.33px 3px 0px rgb(0 0 0 / 15%);
+	max-height: 400px;
+	overflow-y: scroll;
+	z-index: 9;
+	border: 1px solid #dadada;
+}
+
+ul.weddingdir-listing-location-data-dropdown li {
+	margin: 0;
+	padding: 1rem;
+	border-bottom: 1px solid #dadada;
+}
+
+.weddingdir-listing-location-data-dropdown li a {
+	color: #222;
+}
+
+.weddingdir-listing-location-data-dropdown li:hover a {
+	color: var( --weddingdir-color-cyan, #00aeaf );
+}
+
+
+@media (max-width: 575px) {
+
+    ul.weddingdir-listing-category-data{
+        width: 100%;
+    }
+
+   	ul.weddingdir-listing-category-data {
+		width: 100%;
+	}
+
+	.weddingdir-listing-location-data .card {
+		width: 100%;
+		min-width: 100%;
+	}
+
+	ul.state-item {
+		column-count: 2;
+	}
+
+	ul.weddingdir-listing-category-data {
+		width: 100%;
+		position: relative;
+	}
+
+	ul.weddingdir-listing-location-data-dropdown {
+		width: 100%;
+	}
+
+	.weddingdir-listing-location-data {
+		position: relative;
+	} 
+}
+
+/**
+ *  List Group Style
+ *  ----------------
+ */
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: var(--weddingdir-color-cyan, #00aeaf );
+    border-color: var(--weddingdir-color-cyan, #00aeaf );
+}
