@@ -144,6 +144,14 @@ function action_nav_menu_link_attributes($atts, $item, $args)
         $atts['data-bs-toggle'] = 'modal';
         $atts['data-bs-target'] = '#weddingdir_vendor_login_model_popup';
     }
+
+    {
+        if ($item->ID == 4643) {
+            $atts['href'] = 'javascript:';
+            $atts['data-bs-toggle'] = 'modal';
+            $atts['data-bs-target'] = '#weddingdir_vendor_registration_model_popup';
+        }
+    }
     return $atts;
 }
 
