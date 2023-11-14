@@ -447,37 +447,12 @@ body {
   }
 }
 
-#sidebar-filter .row:nth-child(2) {
-  position: fixed;
-  left: 0;
-  max-width: 430px;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 99999;
-  transform: translateX(-100%);
-  transition: 500ms;
-  overflow: auto;
-  display: block;
-  --bs-gutter-x: 0;
-
+#sidebar-filter {
   .col-12 {
     border-bottom: 1px solid #e5e5e5;
 
-    .row-cols-xl-4 {
-      .col {
-        width: 100%;
 
-        &:last-child {
-          .mb-3 {
-            margin-bottom: 0 !important;
-          }
-        }
-      }
-    }
-
-    .find-listing-widget {
+    .filter-widget-layout-two {
       margin-top: 0 !important;
       display: block !important;
       height: auto;
