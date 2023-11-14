@@ -573,7 +573,9 @@ body {
   width: 100%;
   transform: translateX(100%);
   transition: 500ms;
-
+  .listing-map {
+    height: 100%;
+  }
   &.show-map {
     transform: translateX(0);
   }

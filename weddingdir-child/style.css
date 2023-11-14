@@ -333,6 +333,8 @@ body.logged-in header .navbar-nav {
   width: 100%;
   transform: translateX(100%);
   transition: 500ms; }
+  #map_handler .listing-map {
+    height: 100%; }
   #map_handler.show-map {
     transform: translateX(0); }
 
