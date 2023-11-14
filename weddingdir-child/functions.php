@@ -237,6 +237,7 @@ function action_wp_footer()
 }
 
 
+add_action('wp_footer', 'action_wp_footer');
 
 function action_admin_head()
 {
