@@ -128,6 +128,19 @@ function action_header_right_side()
     }
 }
 
+
+add_filter( 'nav_menu_link_attributes', 'action_nav_menu_link_attributes', 10, 3 );
+function action_nav_menu_link_attributes( $atts, $item, $args )
+{
+  // The ID of the target menu item
+  if ($item->ID == 4642) {
+    $atts['href'] = 'javascript:';
+    $atts['data-bs-toggle'] = 'modal';
+    $atts['data-bs-target'] = '#weddingdir_couple_registration_model_popup';
+  }
+  return $atts;
+}
+
 add_action('header_right_side', 'action_header_right_side');
 
 
