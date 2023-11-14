@@ -258,8 +258,7 @@ body.logged-in header .navbar-nav {
   #sidebar-filter .offcanvas-title {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    font-size: 22px;
-    padding: 30px 1rem; }
+    font-size: 22px; }
   #sidebar-filter .close-filter {
     cursor: pointer; }
     #sidebar-filter .close-filter svg {
