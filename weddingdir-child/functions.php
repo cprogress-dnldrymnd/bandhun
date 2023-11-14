@@ -189,17 +189,20 @@ function action_wp_footer()
             jQuery('.filter-backdrop').click(function(e) {
                 jQuery('#weddingdir_find_listing_form .row:nth-child(2)').removeClass('show-filter');
                 jQuery('#weddingdir_show_listing_on_map, #weddingdir_listing_tax_map').removeClass('show-map');
+                jQuery('body').removeClass('body-show-map');
                 jQuery('.filter-backdrop').removeClass('filter-backdrop-active');
                 e.preventDefault();
             });
             jQuery('#listing-map').click(function(e) {
                 jQuery('#weddingdir_show_listing_on_map, #weddingdir_listing_tax_map').toggleClass('show-map');
+                jQuery('body').toggleClass('body-show-map');
                 jQuery('.filter-backdrop').toggleClass('filter-backdrop-active');
                 e.preventDefault();
                 return false;
             });
             jQuery('.close-map').click(function(e) {
                 jQuery('#weddingdir_show_listing_on_map, #weddingdir_listing_tax_map').toggleClass('show-map');
+                jQuery('body').toggleClass('body-show-map');
                 jQuery('.filter-backdrop').toggleClass('filter-backdrop-active');
                 return false;
             });
