@@ -201,13 +201,6 @@ body.logged-in header .navbar-nav {
         .slider-content.slider-content .slider-form > .row > div {
           width: 25%; } }
 
-.sidebar-nav.sidebar-nav ul li a {
-  font-weight: 400; }
-.sidebar-nav.sidebar-nav ul li i {
-  display: none; }
-.sidebar-nav.sidebar-nav ul li:nth-child(6), .sidebar-nav.sidebar-nav ul li:nth-child(7) {
-  display: none !important; }
-
 .etimated-cost.etimated-cost .icon {
   display: none; }
 .etimated-cost.etimated-cost .cost-price.final {
@@ -416,6 +409,15 @@ body.user-is-logged-in .not-logged-in-only {
   .listing-singular-post-features li:not(:last-child) {
     margin-right: 10px; }
 
+.page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
+  display: flex;
+  flex-direction: column; }
+  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li a {
+    font-weight: 400; }
+  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li i {
+    display: none; }
+  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
+    display: none !important; }
 @media (min-width: 1400px) {
   .page-template-couple-dashboard .dashboard-body .container {
     max-width: 1140px; } }

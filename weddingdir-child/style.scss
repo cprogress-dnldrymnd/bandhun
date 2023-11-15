@@ -362,25 +362,6 @@ body {
   }
 }
 
-.sidebar-nav.sidebar-nav {
-  ul {
-    li {
-      a {
-        font-weight: 400;
-      }
-
-      i {
-        display: none;
-      }
-
-      &:nth-child(6),
-      &:nth-child(7) {
-        display: none !important;
-      }
-    }
-  }
-}
-
 .etimated-cost.etimated-cost {
   .icon {
     display: none;
@@ -709,6 +690,36 @@ body {
 }
 
 .page-template-couple-dashboard {
+  .sidebar-nav.sidebar-nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        a {
+          font-weight: 400;
+        }
+
+        i {
+          display: none;
+        }
+
+        &:nth-child(1) {
+        }
+        &:nth-child(2) {
+        }
+        &:nth-child(3) {
+        }
+        &:nth-child(4) {
+        }
+        &:nth-child(5) {
+        }
+        &:nth-child(6),
+        &:nth-child(7) {
+          display: none !important;
+        }
+      }
+    }
+  }
   .dashboard-body {
     .container {
       @media (min-width: 1400px) {
