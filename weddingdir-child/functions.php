@@ -241,10 +241,11 @@ function action_wp_footer()
                 return false;
             });
         }
-        
+
         function dashboard() {
             jQuery('.dashboard-body .card-shadow-header h3').each(function(index, element) {
                 $section_name = jQuery(this).text();
+                console.log($section_name);
                 jQuery(this).parents('card-shadow').attr('section-name', $section_name);
             });
         }
