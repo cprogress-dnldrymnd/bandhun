@@ -804,7 +804,7 @@ function action_hidden_inputs_fields($args = [])
 {
 
     $_hidden_input  =   [
-        'pincodexx'           =>      '',
+        'search_term'           =>      '',
     ];
     $_collection        =       [];
 
@@ -825,3 +825,8 @@ function action_hidden_inputs_fields($args = [])
 }
 
 add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields');
+
+
+class ListingForm {
+    
+}
