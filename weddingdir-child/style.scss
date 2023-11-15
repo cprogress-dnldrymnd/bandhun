@@ -696,6 +696,24 @@ body {
   .top-holder {
     margin-top: 30px;
   }
+  .couple-img-wrap {
+    .couple-btn {
+      left: 20px;
+      text-align: center;
+      #button_id_couple_dashboard_image {
+        .fa {
+          &:after {
+            content: "Change";
+            font-family: 'Nunito', sans-serif;
+            margin-left: 5px;
+          }
+        }
+      }
+      .weddingdir-share-post-model {
+        background-color: #716D6C;
+      }
+    }
+  }
   .sidebar-nav.sidebar-nav {
     ul {
       display: flex;
