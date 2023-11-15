@@ -842,9 +842,14 @@ function PLUGIN_modify_query($query)
     if (array_key_exists('post_type', $query->query)) {
         if ($query->query['post_type'] == 'listing') {
             //Apply the order by options
-            $query->set('s', $xxxxx);
+            $query->set('s', $search_term);
         }
     }
+    ?>
+    <script>
+        console.log(<?= $search_term ?>);
+    </script>
+    <?php
 }
 
 add_action('pre_get_posts', 'PLUGIN_modify_query');
