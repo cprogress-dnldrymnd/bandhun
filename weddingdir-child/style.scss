@@ -746,11 +746,10 @@ body {
           order: 1;
         }
 
-        &:nth-child(9) {
+        &:nth-child(8) {
           order: 7;
         }
-        &:nth-child(6),
-        &:nth-child(7) {
+        &:nth-child(6) {
           display: none !important;
         }
       }

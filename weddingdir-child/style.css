@@ -445,9 +445,9 @@ body.user-is-logged-in .not-logged-in-only {
       order: 3; }
     .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8) {
       order: 1; }
-    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(9) {
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8) {
       order: 7; }
-    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6) {
       display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
