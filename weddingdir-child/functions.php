@@ -243,16 +243,18 @@ function action_wp_footer()
                 return false;
             });
 
-            console.log('<?= get_page_template_slug() ?>')
         }
         <?php if (get_page_template_slug() == 'user-template/couple-dashboard.php') { ?>
 
             function dashboard() {
                 jQuery('.dashboard-body .card-shadow').each(function(index, element) {
                     $section_name = jQuery(this).find('h3').text();
-                    console.log($section_name);
                     jQuery(this).addClass($section_name);
                 });
+
+                $top = jQuery('<div class="top"></div>');
+
+                $top.prependTo('.col-xl-8');
             }
         <?php } ?>
     </script>
