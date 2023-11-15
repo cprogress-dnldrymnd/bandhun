@@ -243,10 +243,10 @@ function action_wp_footer()
         }
 
         function dashboard() {
-            jQuery('.dashboard-body .card-shadow-header h3').each(function(index, element) {
-                $section_name = jQuery(this).text();
+            jQuery('.dashboard-body .card-shadow').each(function(index, element) {
+                $section_name = jQuery(this).find('h3').text();
                 console.log($section_name);
-                jQuery(this).parents('card-shadow').attr('section-name', $section_name);
+                jQuery(this).attr('section-name', $section_name);
             });
         }
     </script>
