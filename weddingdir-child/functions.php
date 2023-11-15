@@ -163,7 +163,11 @@ function translate_text($translated)
     $translated = str_ireplace('Value of money', 'Value for money', $translated);
     return $translated;
 }
-
+function translate_my_wishlish($translated)
+{
+    $translated = str_ireplace('My Wishlist', 'Vendor list', $translated);
+    return $translated;
+}
 
 function action_wp_footer()
 {
