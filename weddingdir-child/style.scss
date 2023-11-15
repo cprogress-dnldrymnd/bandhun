@@ -392,11 +392,10 @@ body {
 }
 
 .dashboard-body {
-  .col-xl-8 {
-    .card-shadow {
-      &.Wedding.details, &.RSVP.Pending {
-        display: none;
-      }
+  .card-shadow {
+    &.Wedding.details,
+    &.RSVP.Pending {
+      display: none;
     }
   }
 }
