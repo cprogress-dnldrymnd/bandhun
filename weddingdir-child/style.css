@@ -213,8 +213,8 @@ body.logged-in header .navbar-nav {
 .etimated-cost.etimated-cost .cost-price.final {
   color: var(--pink-color); }
 
-.dashboard-body .col-xl-8 .card-shadow[section-name="Wedding details"] {
-  display: none !important; }
+.dashboard-body .col-xl-8 .card-shadow.Wedding.details {
+  display: none; }
 
 .empty-guest-list.empty-guest-list i {
   display: none; }
