@@ -256,8 +256,8 @@ function action_wp_footer()
 
                 $top.prependTo('.col-xl-8');
 
-                jQuery('.Upcoming.tasks').addClass('.col-lg-6').appendTo('.top');
-                jQuery('.Budget').addClass('.col-lg-6').appendTo('.top');
+                jQuery('.Upcoming.tasks').addClass('col-lg-6').appendTo('.top');
+                jQuery('.Budget').addClass('col-lg-6').appendTo('.top');
             }
         <?php } ?>
     </script>
