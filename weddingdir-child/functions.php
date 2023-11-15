@@ -252,9 +252,12 @@ function action_wp_footer()
                     jQuery(this).addClass($section_name);
                 });
 
-                $top = jQuery('<div class="top"></div>');
+                $top = jQuery('<div class="top row"></div>');
 
                 $top.prependTo('.col-xl-8');
+
+                jQuery('.Upcoming.tasks').addClass('.col-lg-6').appendTo('.top');
+                jQuery('.Budget').addClass('.col-lg-6').appendTo('.top');
             }
         <?php } ?>
     </script>
