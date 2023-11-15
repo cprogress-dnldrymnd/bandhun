@@ -804,7 +804,7 @@ function action_hidden_inputs_fields($args = [])
 {
 
     $_hidden_input  =   [
-        'search_term'           =>      '',
+        'search_term'           =>      'search_terms',
     ];
     $_collection        =       [];
 
