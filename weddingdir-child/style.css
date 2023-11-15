@@ -255,7 +255,7 @@ body.logged-in header .navbar-nav {
       display: block !important;
       height: auto; }
   #sidebar-filter .offcanvas-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-size: 22px; }
   #sidebar-filter .close-filter {
@@ -408,5 +408,12 @@ body.user-is-logged-in .not-logged-in-only {
     right: 10px;
     top: 50%;
     transform: translateY(-50%); }
+
+.listing-singular-post-features {
+  list-style: none; }
+  .listing-singular-post-features li i {
+    margin-right: 5px; }
+  .listing-singular-post-features li:not(:last-child) {
+    margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
