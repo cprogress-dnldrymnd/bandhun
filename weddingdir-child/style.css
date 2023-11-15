@@ -213,7 +213,7 @@ body.logged-in header .navbar-nav {
 .etimated-cost.etimated-cost .cost-price.final {
   color: var(--pink-color); }
 
-.dashboard-body .col-xl-8 .card-shadow.Wedding.details {
+.dashboard-body .col-xl-8 .card-shadow.Wedding.details, .dashboard-body .col-xl-8 .card-shadow.RSVP.Pending {
   display: none; }
 
 .empty-guest-list.empty-guest-list i {
