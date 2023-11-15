@@ -804,26 +804,6 @@ function action_hidden_inputs_fields($args = [])
 {
 
     $_hidden_input  =   [
-
-        'cat_id'            =>      '',
-
-        'region_id'         =>      '',
-
-        'state_id'          =>      '',
-
-        'city_id'           =>      '',
-
-        'latitude'          =>      '',
-
-        'longitude'         =>      '',
-
-        'city_name'         =>      '',
-
-        'region_name'       =>      '',
-
-        'geoloc'            =>      '',
-
-        'pincode'           =>      '',
         'pincodexx'           =>      '',
     ];
     $_collection        =       [];
