@@ -391,6 +391,15 @@ body {
   }
 }
 
+.dashboard-body {
+  .col-xl-8 {
+    .card-shadow {
+      &[section-name="Wedding details"] {
+        display: none !important;
+      }
+    }
+  }
+}
 
 .empty-guest-list.empty-guest-list {
   i {
