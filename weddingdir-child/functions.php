@@ -828,7 +828,7 @@ add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields
 
 function custom_query_vars_filter($vars)
 {
-    $vars[] = 'state_id';
+    $vars[] = 'search_term';
 
     return $vars;
 }
@@ -836,16 +836,11 @@ add_filter('query_vars', 'custom_query_vars_filter');
 
 function PLUGIN_modify_query($query)
 {
-
-    $search_term = get_query_var('state_id');
-
-    if (array_key_exists('post_type', $query->query)) {
-        if ($query->query['post_type'] == 'listing') {
-            //Apply the order by options
-            $query->set('s', $search_term);
-        }
+    $search_term = get_query_var('search_term');
+    if ($query->query['post_type'] == 'listing') {
+        //Apply the order by options
+        $query->set('s', $search_term);
     }
-  
 }
 
 add_action('pre_get_posts', 'PLUGIN_modify_query');
