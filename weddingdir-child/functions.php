@@ -240,8 +240,10 @@ function action_wp_footer()
                 jQuery('.filter-backdrop').toggleClass('filter-backdrop-active');
                 return false;
             });
-        }
 
+            console.log('<?= get_page_template_slug() ?>')
+        }
+            
         function dashboard() {
             jQuery('.dashboard-body .card-shadow').each(function(index, element) {
                 $section_name = jQuery(this).find('h3').text();
