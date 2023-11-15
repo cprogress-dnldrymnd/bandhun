@@ -843,4 +843,4 @@ function PLUGIN_modify_query($query)
     }
 }
 
-add_action('pre_get_posts', 'PLUGIN_modify_query');
+add_filter('pre_get_posts', 'PLUGIN_modify_query');
