@@ -432,8 +432,5 @@ body.user-is-logged-in .not-logged-in-only {
     order: 7; }
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
     display: none !important; }
-@media (min-width: 1400px) {
-  .page-template-couple-dashboard .dashboard-body .container {
-    max-width: 1140px; } }
 
 /*# sourceMappingURL=style.css.map */
