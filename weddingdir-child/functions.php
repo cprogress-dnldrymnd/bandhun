@@ -252,14 +252,14 @@ function action_wp_footer()
                     jQuery(this).addClass($section_name);
                 });
 
-                $top = jQuery('<div class="container"><div class="top"></div>');
+                $top = jQuery('<div class="container"><div class="top row"><div class="col-lg-6 col-task"></div><div class="col-lg-6 col-budget"></div><div class="col-lg-12 col-guest"></div></div>');
 
                 $top.prependTo('.col-xl-8');
 
-                jQuery('.Upcoming.tasks').addClass('col-half').appendTo('.top');
-                jQuery('.Budget').addClass('col-half').appendTo('.top');
-                jQuery('.Guest.List.Overview').addClass('col-full').appendTo('.top');
-
+                jQuery('.Upcoming.tasks').appendTo('.col-task');
+                jQuery('.Budget').appendTo('.col-budget');
+                jQuery('.Guest.List.Overview').appendTo('.col-guest');
+                
             }
         <?php } ?>
     </script>
