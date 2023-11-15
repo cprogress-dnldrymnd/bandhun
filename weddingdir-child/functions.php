@@ -829,10 +829,13 @@ add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields
 
 function PLUGIN_modify_query($query)
 {
+
+    $search_term = $_GET['search_term'] ? $_GET['search_term']  : false;
+
     if (array_key_exists('post_type', $query->query)) {
         if ($query->query['post_type'] == 'listing') {
             //Apply the order by options
-            $query->set('s', 'xxxxx');
+            $query->set('s', $xxxxx);
         }
     }
 }
