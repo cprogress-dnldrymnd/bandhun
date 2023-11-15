@@ -193,7 +193,9 @@ function action_wp_footer()
     <script>
         jQuery(document).ready(function() {
             listings();
-            dashboard();
+            <?php if (get_page_template_slug() == 'user-template/couple-dashboard.php') { ?>
+                dashboard();
+            <?php } ?>
         });
 
         function listings() {
@@ -243,14 +245,16 @@ function action_wp_footer()
 
             console.log('<?= get_page_template_slug() ?>')
         }
-            
-        function dashboard() {
-            jQuery('.dashboard-body .card-shadow').each(function(index, element) {
-                $section_name = jQuery(this).find('h3').text();
-                console.log($section_name);
-                jQuery(this).addClass($section_name);
-            });
-        }
+        <?php if (get_page_template_slug() == 'user-template/couple-dashboard.php') { ?>
+
+            function dashboard() {
+                jQuery('.dashboard-body .card-shadow').each(function(index, element) {
+                    $section_name = jQuery(this).find('h3').text();
+                    console.log($section_name);
+                    jQuery(this).addClass($section_name);
+                });
+            }
+        <?php } ?>
     </script>
 <?php
 }
