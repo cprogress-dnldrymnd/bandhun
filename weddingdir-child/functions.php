@@ -839,7 +839,7 @@ function PLUGIN_modify_query($query)
     $search_term = get_query_var('search_term');
     if ($query->query['post_type'] == 'post') {
         //Apply the order by options
-        $query->set('s', $search_term);
+        $query->set('s', 'xxxxxxxxxx');
     }
 }
 
