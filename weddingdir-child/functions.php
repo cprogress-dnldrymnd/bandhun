@@ -841,6 +841,7 @@ function PLUGIN_modify_query($query)
         //Apply the order by options
         $query->set('s', $search_term);
     }
+    echo $search_term;
 }
 
 add_action('pre_get_posts', 'PLUGIN_modify_query');
