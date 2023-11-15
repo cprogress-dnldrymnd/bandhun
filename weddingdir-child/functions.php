@@ -252,7 +252,7 @@ function action_wp_footer()
                     jQuery(this).addClass($section_name);
                 });
 
-                $top = jQuery('<div class="container"><div class="top row"><div class="col-lg-6 col-task"></div><div class="col-lg-6 col-budget"></div><div class="col-lg-12 col-guest"></div></div>');
+                $top = jQuery('<div class="top-holder"><div class="top row"><div class="col-lg-6 col-task"></div><div class="col-lg-6 col-budget"></div><div class="col-lg-12 col-guest"></div></div>');
 
                 $top.prependTo('.col-xl-8');
 
