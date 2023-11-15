@@ -690,6 +690,12 @@ body {
 }
 .page-template-couple-dashboard {
   --weddingdir-color-dark-cyan: #e31f71;
+  .card-shadow {
+    margin-bottom: 50px;
+  }
+  .top-holder {
+    margin-top: 50px;
+  }
   .sidebar-nav.sidebar-nav {
     ul {
       display: flex;

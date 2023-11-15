@@ -411,6 +411,10 @@ body.user-is-logged-in .not-logged-in-only {
 
 .page-template-couple-dashboard {
   --weddingdir-color-dark-cyan: #e31f71; }
+  .page-template-couple-dashboard .card-shadow {
+    margin-bottom: 50px; }
+  .page-template-couple-dashboard .top-holder {
+    margin-top: 50px; }
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
     display: flex;
     flex-direction: column; }
