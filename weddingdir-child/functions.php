@@ -158,6 +158,9 @@ add_action('header_right_side', 'action_header_right_side');
 
 add_filter('gettext', 'translate_text');
 add_filter('ngettext', 'translate_text');
+
+add_filter('gettext', 'translate_my_wishlish');
+add_filter('ngettext', 'translate_my_wishlish');
 function translate_text($translated)
 {
     $translated = str_ireplace('Value of money', 'Value for money', $translated);
