@@ -391,15 +391,6 @@ body {
   }
 }
 
-.dashboard-body {
-  .col-xl-8 {
-    .card-shadow {
-      &:nth-child(2) {
-        display: none;
-      }
-    }
-  }
-}
 
 .empty-guest-list.empty-guest-list {
   i {
