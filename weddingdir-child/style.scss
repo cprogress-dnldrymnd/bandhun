@@ -690,6 +690,11 @@ body {
 }
 .page-template-couple-dashboard {
   --weddingdir-color-dark-cyan: #e31f71;
+  .offcanvas-collapse-mobile {
+    .user-profile {
+      display: none !important;
+    }
+  }
   .card-shadow {
     margin-bottom: 50px;
   }
