@@ -827,6 +827,18 @@ function action_hidden_inputs_fields($args = [])
 add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields');
 
 
-class ListingForm {
-    
-}
+function PLUGIN_modify_query($query) {
+    //The action also runs in the admin area, so be careful if
+    //you don't want to alter the default behavior there
+    if(!is_admin()) {
+      if (array_key_exists('post_type', $query->query)) {
+        if ($query->query['post_type'] == 'listing') {
+  
+          //Apply the order by options
+          $query->set('s', 'xxxxx');
+        }
+      }
+    }
+  }
+  
+  add_action( 'pre_get_posts' , 'PLUGIN_modify_query' );
