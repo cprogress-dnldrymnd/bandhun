@@ -827,16 +827,14 @@ function action_hidden_inputs_fields($args = [])
 add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields');
 
 
-function PLUGIN_modify_query($query)
+function listing_query($query)
 {
-    $search_term = isset($_GET['search_term']) && !empty($_GET['search_term']) ?   esc_attr($_GET['search_term']) :   '';
-    if ($search_term) {
-        if (array_key_exists('post_type', $query->query)) {
-            if ($query->query['post_type'] == 'listing') {
-                $query->set('s', $search_term);
-            }
+    $search_term = isset($_GET['search_term']) && !empty($_GET['search_term']) ? esc_attr($_GET['search_term']) :   '';
+    if (array_key_exists('post_type', $query->query)) {
+        if ($query->query['post_type'] == 'listing') {
+            $query->set('s', $search_term);
         }
     }
 }
 
-add_action('pre_get_posts', 'PLUGIN_modify_query');
+add_action('pre_get_posts', 'listing_query');
