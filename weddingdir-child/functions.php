@@ -845,11 +845,7 @@ function PLUGIN_modify_query($query)
             $query->set('s', $search_term);
         }
     }
-    ?>
-    <script>
-        console.log(<?= $search_term ?>);
-    </script>
-    <?php
+  
 }
 
 add_action('pre_get_posts', 'PLUGIN_modify_query');
