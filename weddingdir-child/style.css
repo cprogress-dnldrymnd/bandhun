@@ -409,28 +409,30 @@ body.user-is-logged-in .not-logged-in-only {
   .listing-singular-post-features li:not(:last-child) {
     margin-right: 10px; }
 
-.page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
-  display: flex;
-  flex-direction: column; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li a {
-    font-weight: 400; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li i {
-    display: none; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(1) {
-    order: 2; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(2) {
-    order: 6; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(3) {
-    order: 5; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(4) {
-    order: 4; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(5) {
-    order: 3; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8) {
-    order: 1; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(9) {
-    order: 7; }
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
-    display: none !important; }
+.page-template-couple-dashboard {
+  --weddingdir-color-dark-cyan: #e31f71; }
+  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
+    display: flex;
+    flex-direction: column; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li a {
+      font-weight: 400; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li i {
+      display: none; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(1) {
+      order: 2; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(2) {
+      order: 6; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(3) {
+      order: 5; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(4) {
+      order: 4; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(5) {
+      order: 3; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8) {
+      order: 1; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(9) {
+      order: 7; }
+    .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
+      display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
