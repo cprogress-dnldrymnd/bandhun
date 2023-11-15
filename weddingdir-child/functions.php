@@ -797,3 +797,51 @@ function custom_class($classes)
     }
     return $classes;
 }
+
+
+
+function action_hidden_inputs_fields($args = [])
+{
+
+    $_hidden_input  =   [
+
+        'cat_id'            =>      '',
+
+        'region_id'         =>      '',
+
+        'state_id'          =>      '',
+
+        'city_id'           =>      '',
+
+        'latitude'          =>      '',
+
+        'longitude'         =>      '',
+
+        'city_name'         =>      '',
+
+        'region_name'       =>      '',
+
+        'geoloc'            =>      '',
+
+        'pincode'           =>      '',
+        'pincodexx'           =>      '',
+    ];
+    $_collection        =       [];
+
+    foreach ($_hidden_input as $key => $value) {
+
+        /**
+         *  Update Value
+         *  ------------
+         */
+        $_collection[$key]    =   isset($_GET[$key]) && !empty($_GET[$key])
+
+            ?   $_GET[$key]
+
+            :   '';
+    }
+
+    return array_merge($args, $_collection);
+}
+
+add_filter('weddingdir/find-listing/hidden-inputs', 'action_hidden_inputs_fields');
