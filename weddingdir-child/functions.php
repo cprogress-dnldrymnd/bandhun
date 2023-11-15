@@ -833,7 +833,7 @@ function custom_query_vars_filter($vars)
     return $vars;
 }
 add_filter('query_vars', 'custom_query_vars_filter');
-
+/*
 function PLUGIN_modify_query($query)
 {
     $search_term = get_query_var('search_term');
@@ -843,4 +843,4 @@ function PLUGIN_modify_query($query)
     }
 }
 
-add_action('pre_get_posts', 'PLUGIN_modify_query');
+add_action('pre_get_posts', 'PLUGIN_modify_query');*/
