@@ -707,3 +707,13 @@ body {
     }
   }
 }
+
+.page-template-couple-dashboard {
+  .dashboard-body {
+    .container {
+      @media (min-width: 1400px) {
+        max-width: 1140px;
+      }
+    }
+  }
+}

@@ -416,4 +416,8 @@ body.user-is-logged-in .not-logged-in-only {
   .listing-singular-post-features li:not(:last-child) {
     margin-right: 10px; }
 
+@media (min-width: 1400px) {
+  .page-template-couple-dashboard .dashboard-body .container {
+    max-width: 1140px; } }
+
 /*# sourceMappingURL=style.css.map */
