@@ -409,43 +409,30 @@ body.user-is-logged-in .not-logged-in-only {
   .listing-singular-post-features li:not(:last-child) {
     margin-right: 10px; }
 
-o My profile .sidebar-nav.sidebar-nav ul, Dashboard .sidebar-nav.sidebar-nav ul, Guest list .sidebar-nav.sidebar-nav ul, Budget .sidebar-nav.sidebar-nav ul, task list .sidebar-nav.sidebar-nav ul, Log out
 .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
   display: flex;
   flex-direction: column; }
-  o My profile .sidebar-nav.sidebar-nav ul li a, Dashboard .sidebar-nav.sidebar-nav ul li a, Guest list .sidebar-nav.sidebar-nav ul li a, Budget .sidebar-nav.sidebar-nav ul li a, task list .sidebar-nav.sidebar-nav ul li a, Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li a {
     font-weight: 400; }
-  o My profile .sidebar-nav.sidebar-nav ul li i, Dashboard .sidebar-nav.sidebar-nav ul li i, Guest list .sidebar-nav.sidebar-nav ul li i, Budget .sidebar-nav.sidebar-nav ul li i, task list .sidebar-nav.sidebar-nav ul li i, Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li i {
     display: none; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(1), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(1), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(1), Budget .sidebar-nav.sidebar-nav ul li:nth-child(1), task list .sidebar-nav.sidebar-nav ul li:nth-child(1), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(1) {
     order: 2; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(2), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(2), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(2), Budget .sidebar-nav.sidebar-nav ul li:nth-child(2), task list .sidebar-nav.sidebar-nav ul li:nth-child(2), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(2) {
     order: 6; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(3), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(3), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(3), Budget .sidebar-nav.sidebar-nav ul li:nth-child(3), task list .sidebar-nav.sidebar-nav ul li:nth-child(3), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(3) {
     order: 5; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(4), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(4), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(4), Budget .sidebar-nav.sidebar-nav ul li:nth-child(4), task list .sidebar-nav.sidebar-nav ul li:nth-child(4), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(4) {
     order: 4; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(5), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(5), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(5), Budget .sidebar-nav.sidebar-nav ul li:nth-child(5), task list .sidebar-nav.sidebar-nav ul li:nth-child(5), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(5) {
     order: 3; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(8), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(8), Budget .sidebar-nav.sidebar-nav ul li:nth-child(8), task list .sidebar-nav.sidebar-nav ul li:nth-child(8), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(8) {
     order: 1; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(9), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(9), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(9), Budget .sidebar-nav.sidebar-nav ul li:nth-child(9), task list .sidebar-nav.sidebar-nav ul li:nth-child(9), Log out
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(9) {
     order: 7; }
-  o My profile .sidebar-nav.sidebar-nav ul li:nth-child(6), o My profile .sidebar-nav.sidebar-nav ul li:nth-child(7), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), Dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(6), Guest list .sidebar-nav.sidebar-nav ul li:nth-child(7), Budget .sidebar-nav.sidebar-nav ul li:nth-child(6), Budget .sidebar-nav.sidebar-nav ul li:nth-child(7), task list .sidebar-nav.sidebar-nav ul li:nth-child(6), task list .sidebar-nav.sidebar-nav ul li:nth-child(7), Log out
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), Log out
-  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
+  .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(6), .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul li:nth-child(7) {
     display: none !important; }
 @media (min-width: 1400px) {
-  o My profile .dashboard-body .container, Dashboard .dashboard-body .container, Guest list .dashboard-body .container, Budget .dashboard-body .container, task list .dashboard-body .container, Log out
   .page-template-couple-dashboard .dashboard-body .container {
     max-width: 1140px; } }
 
