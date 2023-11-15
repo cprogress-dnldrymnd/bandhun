@@ -804,7 +804,7 @@ function action_hidden_inputs_fields($args = [])
 {
 
     $_hidden_input  =   [
-        'pincodexx'           =>      '',
+        'pincodexx'           =>      'test',
     ];
     $_collection        =       [];
 
