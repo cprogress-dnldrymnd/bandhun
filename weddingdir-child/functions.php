@@ -246,7 +246,7 @@ function action_wp_footer()
             jQuery('.dashboard-body .card-shadow').each(function(index, element) {
                 $section_name = jQuery(this).find('h3').text();
                 console.log($section_name);
-                jQuery(this).attr('section-name', $section_name);
+                jQuery(this).addClass($section_name);
             });
         }
     </script>
