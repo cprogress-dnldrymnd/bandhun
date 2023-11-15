@@ -192,6 +192,11 @@ function action_wp_footer()
     ?>
     <script>
         jQuery(document).ready(function() {
+            listings();
+            dashboard();
+        });
+
+        function listings() {
             $filter_backdrop = jQuery('<div class="filter-backdrop"></div>');
             $filter_backdrop.appendTo('body');
             $map_button = jQuery('<li class="nav-item nav-map"> <a class="nav-link" id="listing-map" data-bs-toggle="pill" href="#" role="tab" aria-selected="false"> <i class="fa fa-map-marker"></i> Map </a> </li>');
@@ -235,7 +240,14 @@ function action_wp_footer()
                 jQuery('.filter-backdrop').toggleClass('filter-backdrop-active');
                 return false;
             });
-        });
+        }
+        
+        function dashboard() {
+            jQuery('.dashboard-body .card-shadow-header h3').each(function(index, element) {
+                $section_name = jQuery(this).text();
+                jQuery(this).parents('card-shadow').attr('section-name', $section_name);
+            });
+        }
     </script>
 <?php
 }
