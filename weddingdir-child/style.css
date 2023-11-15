@@ -423,7 +423,9 @@ body.user-is-logged-in .not-logged-in-only {
       font-family: 'Nunito', sans-serif;
       margin-left: 5px; }
     .page-template-couple-dashboard .couple-img-wrap .couple-btn .weddingdir-share-post-model {
-      background-color: #716D6C; }
+      background-color: #716D6C;
+      border-color: #716D6C;
+      color: var(--white-color); }
   .page-template-couple-dashboard .sidebar-nav.sidebar-nav ul {
     display: flex;
     flex-direction: column; }
